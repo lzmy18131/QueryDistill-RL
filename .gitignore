@@ -7,11 +7,11 @@ __pycache__/
 .ruff_cache/
 
 # Large local-only artifacts (not suitable for GitHub)
-models/
-data/
-checkpoints/
+/models/
+/data/
+/checkpoints/
 *.safetensors
 *.bin
 *.zip
-logs/
-artifacts/runs/
+/logs/
+/artifacts/runs/
