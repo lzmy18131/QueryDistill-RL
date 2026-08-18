@@ -8,7 +8,14 @@ __pycache__/
 
 # Large local-only artifacts (not suitable for GitHub)
 /models/
-/data/
+/data/*
+!/data/tiny_sql/
+!/data/bird/
+/data/bird/*
+!/data/bird/examples/
+!/data/bird/splits/
+!/data/bird/raw/
+!/data/bird/db_registry.json
 /checkpoints/
 *.safetensors
 *.bin

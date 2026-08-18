@@ -1,0 +1,24 @@
+{
+  "databases": {
+    "address": "train/databases/address.sqlite",
+    "airline": "train/databases/airline.sqlite",
+    "books": "train/databases/books.sqlite",
+    "book_publishing_company": "train/databases/book_publishing_company.sqlite",
+    "car_retails": "train/databases/car_retails.sqlite",
+    "hockey": "train/databases/hockey.sqlite",
+    "movie_3": "train/databases/movie_3.sqlite",
+    "olympics": "train/databases/olympics.sqlite",
+    "public_review_platform": "train/databases/public_review_platform.sqlite",
+    "california_schools": "mini_dev/databases/california_schools.sqlite",
+    "card_games": "mini_dev/databases/card_games.sqlite",
+    "codebase_community": "mini_dev/databases/codebase_community.sqlite",
+    "debit_card_specializing": "mini_dev/databases/debit_card_specializing.sqlite",
+    "european_football_2": "mini_dev/databases/european_football_2.sqlite",
+    "financial": "mini_dev/databases/financial.sqlite",
+    "formula_1": "mini_dev/databases/formula_1.sqlite",
+    "student_club": "mini_dev/databases/student_club.sqlite",
+    "superhero": "mini_dev/databases/superhero.sqlite",
+    "thrombosis_prediction": "mini_dev/databases/thrombosis_prediction.sqlite",
+    "toxicology": "mini_dev/databases/toxicology.sqlite"
+  }
+}
