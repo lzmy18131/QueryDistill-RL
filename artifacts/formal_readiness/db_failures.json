@@ -1,1 +1,12 @@
-{"failures": [], "hash_conflicts": []}
+{
+  "failures": [],
+  "hash_conflicts": [
+    {
+      "db_id": "airline",
+      "existing_sha256": "11e57cdf74cb5ba6a4e91940506f08359bee5463fdf2d3bf50a2823c3c4c5e8a",
+      "official_sha256": "50308a01c2467df9370ce6ee45595c97af2a06b73e195f52444406d4cdad08a8",
+      "source": "birdsql/bird23-train-filtered official train.zip",
+      "action": "preserved existing; awaiting manual review"
+    }
+  ]
+}

@@ -1,58 +1,16 @@
 {
-  "format_version": "1.9",
-  "git_commit": "b2c3d604b9a56a474b9216f3dca4a46de79ad097",
-  "dataset": {
-    "filtered_train_sha256": "2ee64aa593e1adc59be7d5b9ce2395372a8ee27fdd94a3fb4d2fe09f3cd34bc8",
-    "mini_dev_sha256": "88ceb0710163cae46a256ecea8f0a8c98286599530b60587fda5c3cfe57d45d2"
-  },
-  "splits": {
-    "formal_train_manifest_sha256": "4d97d914e00116d590b18cdc6341f7f4d3098c6acab1401e1a705e082501587b",
-    "engineering_validation_manifest_sha256": "6ad4d91cdad514317cae3567acaa243e9569e1dd0fb4eee1697cae1e0fc21342",
-    "formal_validation_manifest_sha256": "cf41a02e99abaa24530e0c4f3996cb427582d5b5a6e2aee99049d6a414e56a93",
-    "final_select500_manifest_sha256": "a923cc4558ab735658c370e5c67e125fd0248ffe4eebf3c603ea4c383a18dc58"
-  },
-  "database": {
-    "db_registry_hash": "5bd5a2a8e96e7119b959cee56c33cf0a2246c374f2924b7119f2461334f4a604",
-    "db_registry_manifest_sha256": "5bd5a2a8e96e7119b959cee56c33cf0a2246c374f2924b7119f2461334f4a604",
-    "db_schema_set_sha256": "80bcdab4c5e05522ae39eb4d7e83fedc369aca2bd431f2302cfe37a4d388fd89"
-  },
-  "models": {
-    "teacher_model_id": "Qwen/Qwen3-4B",
-    "teacher_revision": "resolved",
-    "student_model_id": "Qwen/Qwen3-0.6B-Base",
-    "student_revision": "resolved"
-  },
-  "prompts": {
-    "teacher_prompt_version": "bird-v2",
-    "student_prompt_version": "bird-v1"
-  },
-  "protocol": {
-    "qwen_chat_template": true,
-    "sql_only": true,
-    "sql_stopping_policy": "StopAfterSqlClose + SqlStoppingGRPOTrainer",
-    "sql_stopping_version": "canonical-</sql>"
-  },
-  "execution": {
-    "gold_audit_timeout_ms": 30000,
-    "candidate_execution_timeout_ms": 3000,
-    "candidate_timeout_frozen": false
-  },
-  "safety": {
-    "SafeSQLExecutor_config_hash": "9d9a56f2032fb278438323855e467992ceb3bff0f7932854287fca8a6eef214c",
-    "scalar_replace_allowed": true,
-    "replace_into_forbidden": true,
-    "layer2_read_only_authorizer": true
-  },
-  "verification": {
-    "ResultEquivalenceVerifier_config_hash": "8692a8b245f3dea6ca68c75c49bbfe67cc70e8988f3c50cb01fb458d4a2d65d7"
-  },
-  "reward": {
-    "CompositeReward_config_hash": "83332e749975edb150707fa141504cc0bfba990bf39dc1774e22c0e44522cbeb"
-  },
-  "training_exclusions": {
-    "engineering_validation_forbidden": true,
-    "formal_validation_forbidden": true,
-    "mini_dev_forbidden": true
-  },
-  "created_at": "2026-08-18T10:57:16.769680+00:00"
+  "student_base_model": "Qwen/Qwen3-0.6B-Base",
+  "teacher_model": "Qwen/Qwen3-4B",
+  "student_prompt_version": "bird-v1",
+  "teacher_prompt_version": "bird-v2",
+  "sql_protocol": "<sql>...</sql>",
+  "sql_stopping": "StopAfterSqlClose + SqlStoppingGRPOTrainer",
+  "safesql_executor_config": "SafeSQLExecutor spawn/fork + read-only + timeout",
+  "result_equivalence_verifier_config": "multiset default, ordered when ORDER BY semantic",
+  "composite_reward_config": "format/parse/safety/execution/correctness",
+  "db_registry_hash": [],
+  "formal_train_manifest_hash": "e83e66f2700c4c6dea8e940baccdc5d9960f5433135801d3572b32486832593f",
+  "formal_validation_manifest_hash": "4b55e73b951fd4bef0232257ad84a18d5c47e19b797aefaec266b1ae09929569",
+  "final_eval_manifest_hash": "6bce9a12ee1f05157ebeaedcd9628423fb3f54a8c262f2d70396e222c55208bf",
+  "created_at": "2026-08-18T05:58:56.690941+00:00"
 }

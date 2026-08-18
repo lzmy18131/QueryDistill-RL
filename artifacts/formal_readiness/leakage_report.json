@@ -1,12 +1,9 @@
 {
-  "id_overlap_with_mini_dev": 0,
-  "normalized_question_overlap_with_mini_dev": 0,
-  "question_evidence_hash_overlap_with_mini_dev": 0,
-  "question_gold_sql_hash_overlap_with_mini_dev": 0,
-  "pairwise_split_id_overlap": 0,
-  "pairwise_split_content_overlap": 0,
-  "duplicate_exact_question_count_within_train_source": 1,
-  "duplicate_normalized_question_count_within_train_source": 2,
-  "mini_dev_exposed_count": 20,
-  "mini_dev_total": 500
+  "formal_train_vs_engineering": 0,
+  "formal_train_vs_formal_validation": 0,
+  "formal_train_vs_mini_dev": 0,
+  "engineering_vs_formal_validation": 0,
+  "engineering_vs_mini_dev": 0,
+  "formal_validation_vs_mini_dev": 0,
+  "duplicate_normalized_question_count": 1
 }
