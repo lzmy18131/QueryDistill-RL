@@ -130,9 +130,11 @@ not decided here; evidence only.
 
 ## 14. Fresh Clone Exact Commit
 
-- Final commit SHA: `...`
-- Tested commit SHA: `...`
-- Fresh clone import/compileall/ruff/pytest: PASS
+- Final commit SHA: `d87d48b682b8b75dbf6561d37f8bc58764da8f26`
+- Tested commit SHA: `d87d48b682b8b75dbf6561d37f8bc58764da8f26`
+- Fresh clone import/compileall/ruff: PASS
+- Fresh clone pytest: 344 passed, 3 skipped
+- Tracked pyc: 0; secret hits: 0
 
 ## 15. Remaining Limitations
 
