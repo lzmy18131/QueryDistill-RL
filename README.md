@@ -163,7 +163,7 @@ Real pilot evidence (frozen from earlier phases; see reports):
 | vLLM | NOT SMOKE VERIFIED |
 
 Current CPU regression (final commit): `compileall` PASS, `ruff` PASS,
-`pytest` = **314 passed, 1 skipped** on fresh clone of the final commit.
+`pytest` = **319 passed, 1 skipped** on fresh clone of the final commit.
 
 No benchmark numbers are claimed. Pilot validation values are engineering
 observations only.
