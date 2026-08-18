@@ -1,0 +1,31 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.11"
+      - name: Install CPU dependencies
+        run: |
+          uv pip install --system --index-url https://download.pytorch.org/whl/cpu torch
+          uv pip install --system -e ".[dev,train]"
+      - name: compileall
+        run: python -m compileall -q src tests
+      - name: ruff check
+        run: ruff check .
+      - name: ruff format check
+        run: ruff format --check .
+      - name: pytest CPU suite
+        run: pytest -q -m "not gpu"
+        env:
+          HF_HOME: ${{ github.workspace }}/.cache/hf
+          TORCH_HOME: ${{ github.workspace }}/.cache/torch

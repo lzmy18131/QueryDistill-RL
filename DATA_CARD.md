@@ -26,20 +26,26 @@ Engineering smoke fixture.
 * `test`: final evaluation only. Gold SQL and gold results of test examples
   never enter a model prompt (enforced by LeakageGuard + tests).
 * `calibration`: GPTQ calibration (train/calibration only; dev/test banned).
+* `validation_tuning`: engineering validation; excluded from training.
+* `formal_validation`: held-out formal evaluation; evaluation allowed, every
+  training/teacher/GPTQ-calibration path is forbidden.
 
-## Real BIRD pilot data
+## Real BIRD formal data (Phase 1.9)
 
-Real BIRD filtered train has been used in engineering pilots:
+- Full filtered train source: 6601 rows.
+- DB Registry: 80 required DBs resolved (69 train + 11 eval), 0 missing,
+  0 hash conflicts, 80/80 quick_check, 80/80 schema hashes.
+- Formal split (frozen, stable SHA-256 IDs):
+  - `formal_train.jsonl`: 6225 rows (`split=train`)
+  - `engineering_validation.jsonl`: 120 rows (`split=validation_tuning`)
+  - `formal_validation.jsonl`: 256 rows (`split=formal_validation`)
+- Union = 6601, pairwise overlap = 0.
+- Mini-Dev final SELECT-500: 500; 20 historically exposed; 480 unexposed.
+- Gold execution audit completed with `audit_timeout_ms=30000`; slow Gold SQL
+  is preserved as runtime evidence, not deleted.
 
-- Teacher diagnostic / collection / paired 88-example SFT/GRPO pilots
-- `validation_tuning` (120 IDs) is reserved and excluded from training
-- `formal_train_core` manifest prepared from the 6601-row filtered train source
-  (full DB set not yet complete locally)
-- 20 Mini-Dev examples are marked as engineering-pilot exposed in
-  `artifacts/experiment/benchmark_exposure_manifest.json` and must be disclosed
-  in any future formal report
-
-Full SQLite database files are not committed to Git.
+Full SQLite database files and the 36MB `formal_train.jsonl` are not committed
+to Git; they are regenerated locally by `tools/build_final_pretraining_gate.py`.
 
 ## Distillation records
 

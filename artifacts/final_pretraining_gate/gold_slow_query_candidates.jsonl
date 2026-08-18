@@ -1,0 +1,3 @@
+{"example_id": "bird-train-832396b146d3eb87994db042424845088e012cebac0b0b5f10e260da6992ff39", "db_id": "sales_in_weather", "sql_hash": null, "timeout_ms": 30000}
+{"example_id": "bird-train-34ff48757c59c3a68f1e7d6bd6f91ac551ccb69c5554277969ddd29bdf4e3555", "db_id": "food_inspection", "sql_hash": null, "timeout_ms": 30000}
+{"example_id": "bird-train-10e946b78dfe11ae43971a89011f5fba2d2a82f94add2c96ee6512a60cfdfbd1", "db_id": "retails", "sql_hash": null, "timeout_ms": 30000}

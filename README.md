@@ -3,16 +3,18 @@
 **Efficient Small-LLM Post-Training for Text-to-SQL via Knowledge Distillation,
 QLoRA, Verifiable Reinforcement Learning, GPTQ Quantization and vLLM Serving.**
 
-> **Status: PRE-FULL HARDENING (Phase 1.7)**
+> **Status: FORMAL_EXPERIMENT_READY (Phase 1.9)**
 >
-> Real Qwen3-4B Teacher, BIRD execution verification, 88-example paired
-> Gold/Distilled QLoRA SFT, real SQLite GRPO learning signal, GRPO
-> confirmation, and GPTQ INT4 quantization have all been **pilot-verified**.
-> This is **not** production-ready, **not** SOTA, and contains **no formal
-> benchmark claims**. The repository is in pre-full hardening: protocol-correct
-> GRPO reconfirmation and GPTQ load validation are being recorded; full 6601
-> BIRD onboarding is prepared but the full DB set is not yet present locally.
-> See `reports/PRE_FULL_HARDENING_REPORT.md`.
+> Full BIRD 6601 source verified, 80-DB registry resolved, Gold execution audit
+> completed with explicit runtime policy, formal split materialized
+> (6225/120/256), stable SHA-256 BIRD IDs frozen, leakage audited, and protocol
+> lock hashes valid. Formal model training (Teacher collection, Gold/Distilled
+> SFT, GRPO, GPTQ, Mini-Dev evaluation) is **NOT YET RUN** and waits for the
+> human-provided FORMAL BIRD EXPERIMENT MATRIX. Pilot evidence from earlier
+> phases remains frozen: real Teacher PASS, paired SFT PASS, corrected
+> Distilled-SFT PASS, protocol-correct GRPO PASS, GPTQ INT4 quantization PASS.
+> GPTQ load validation remains environment-blocked (WSL lacks CUDA_HOME/nvcc).
+> See `reports/FINAL_PRETRAINING_GATE_REPORT.md`.
 
 ---
 
@@ -136,9 +138,9 @@ sanity. Full rationale: `docs/REWARD_DESIGN.md`.
 
 ## Hardware constraints
 
-* Windows 11 + RTX 4060 Laptop 8 GB VRAM + 16 GB RAM; C: ~20 GB free, D: ~189 GB
-  free. All large files live on D: (`D:\LLMProjects\QueryDistill-RL`,
-  `D:\LLMCache`). See `.env.example`.
+* Windows 11 + RTX 4060 Laptop 8 GB VRAM + 16 GB RAM; C: ~23 GB free,
+  D: ~106 GB free at Phase 1.9. All large files live on D:
+  (`D:\LLMProjects\QueryDistill-RL`, `D:\LLMCache`). See `.env.example`.
 * Primary CUDA environment: WSL2 Ubuntu. Native Windows is only used for CPU
   tests in this round.
 * This repository never claims production readiness, SOTA, or statistical
@@ -158,12 +160,16 @@ Real pilot evidence (frozen from earlier phases; see reports):
 | Protocol-correct GRPO reconfirmation | PASS |
 | GPTQ INT4 quantization | PASS |
 | GPTQ load validation | ENV BLOCKED (CUDA_HOME/nvcc) |
-| Full BIRD formal data onboarding | IN PROGRESS (see `artifacts/formal_readiness`) |
-| Formal full experiment | NOT RUN |
+| Full BIRD formal data onboarding | PASS (6601 source, 80 DB registry, formal splits) |
+| Gold execution audit | COMPLETED (explicit `audit_timeout_ms=30000`) |
+| Stable BIRD IDs | PASS (SHA-256, 6601 unique) |
+| Formal protocol lock | PASS (all hashes valid) |
+| Formal full experiment | NOT RUN (waits for Formal Experiment Matrix) |
 | vLLM | NOT SMOKE VERIFIED |
 
-Current CPU regression (final commit): `compileall` PASS, `ruff` PASS,
-`pytest` = **319 passed, 1 skipped** on fresh clone of the final commit.
+Current CPU regression (Phase 1.9): `compileall` PASS, `ruff` PASS,
+`pytest` = **346 passed, 1 skipped** locally; final fresh-clone numbers are
+recorded in `artifacts/final_pretraining_gate/repository_integrity.json`.
 
 No benchmark numbers are claimed. Pilot validation values are engineering
 observations only.

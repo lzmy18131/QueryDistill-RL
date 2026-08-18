@@ -1,0 +1,138 @@
+{
+  "sample_count": 6598,
+  "P50_ms": 258.01,
+  "P90_ms": 426.81,
+  "P95_ms": 934.54,
+  "P99_ms": 3529.59,
+  "max_ms": 25069.57,
+  "count_le_3s": 6525,
+  "count_gt_3s": 73,
+  "count_le_5s": 6547,
+  "count_gt_5s": 51,
+  "count_le_10s": 6589,
+  "count_gt_10s": 9,
+  "count_le_30s": 6598,
+  "count_gt_30s": 0,
+  "slowest_dbs": [
+    {
+      "db_id": "donor",
+      "count": 88,
+      "mean_ms": 2621.41,
+      "max_ms": 25069.57
+    },
+    {
+      "db_id": "music_platform_2",
+      "count": 40,
+      "mean_ms": 1566.81,
+      "max_ms": 13283.85
+    },
+    {
+      "db_id": "bike_share_1",
+      "count": 51,
+      "mean_ms": 1537.84,
+      "max_ms": 14256.85
+    },
+    {
+      "db_id": "coinmarketcap",
+      "count": 37,
+      "mean_ms": 1438.39,
+      "max_ms": 4896.42
+    },
+    {
+      "db_id": "movie_platform",
+      "count": 102,
+      "mean_ms": 1311.09,
+      "max_ms": 9746.55
+    },
+    {
+      "db_id": "world_development_indicators",
+      "count": 105,
+      "mean_ms": 1283.55,
+      "max_ms": 20135.45
+    },
+    {
+      "db_id": "language_corpus",
+      "count": 90,
+      "mean_ms": 1180.19,
+      "max_ms": 11272.59
+    },
+    {
+      "db_id": "sales_in_weather",
+      "count": 61,
+      "mean_ms": 1072.74,
+      "max_ms": 30218.31
+    },
+    {
+      "db_id": "retails",
+      "count": 155,
+      "mean_ms": 972.58,
+      "max_ms": 30204.42
+    },
+    {
+      "db_id": "codebase_comments",
+      "count": 79,
+      "mean_ms": 925.56,
+      "max_ms": 5314.97
+    },
+    {
+      "db_id": "food_inspection",
+      "count": 65,
+      "mean_ms": 728.38,
+      "max_ms": 30216.81
+    },
+    {
+      "db_id": "menu",
+      "count": 70,
+      "mean_ms": 698.14,
+      "max_ms": 5055.33
+    },
+    {
+      "db_id": "movielens",
+      "count": 70,
+      "mean_ms": 632.66,
+      "max_ms": 6431.06
+    },
+    {
+      "db_id": "sales",
+      "count": 77,
+      "mean_ms": 599.68,
+      "max_ms": 4738.98
+    },
+    {
+      "db_id": "authors",
+      "count": 104,
+      "mean_ms": 557.95,
+      "max_ms": 7940.59
+    },
+    {
+      "db_id": "talkingdata",
+      "count": 118,
+      "mean_ms": 483.94,
+      "max_ms": 17923.21
+    },
+    {
+      "db_id": "image_and_language",
+      "count": 95,
+      "mean_ms": 379.24,
+      "max_ms": 2067.1
+    },
+    {
+      "db_id": "airline",
+      "count": 66,
+      "mean_ms": 358.36,
+      "max_ms": 831.21
+    },
+    {
+      "db_id": "college_completion",
+      "count": 45,
+      "mean_ms": 355.0,
+      "max_ms": 778.48
+    },
+    {
+      "db_id": "food_inspection_2",
+      "count": 109,
+      "mean_ms": 352.53,
+      "max_ms": 2290.15
+    }
+  ]
+}

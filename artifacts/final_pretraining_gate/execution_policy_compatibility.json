@@ -1,0 +1,17 @@
+{
+  "3s": {
+    "gold_queries_exceeding": 76,
+    "total_gold_queries": 6601,
+    "ratio": 0.0115
+  },
+  "5s": {
+    "gold_queries_exceeding": 54,
+    "total_gold_queries": 6601,
+    "ratio": 0.0082
+  },
+  "10s": {
+    "gold_queries_exceeding": 12,
+    "total_gold_queries": 6601,
+    "ratio": 0.0018
+  }
+}

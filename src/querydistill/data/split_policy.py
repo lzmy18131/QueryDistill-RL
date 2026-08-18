@@ -4,8 +4,8 @@ Training paths are only allowed to see ``train`` (GPTQ calibration:
 ``train`` + ``calibration``). Dev/test examples are excluded and recorded by
 default; a split that is not part of the project schema is rejected outright.
 
-Evaluation is the opposite: it must explicitly name ``dev`` or ``test`` and
-refuses to run without a split argument.
+Evaluation is the opposite: it must explicitly name ``dev``, ``test`` or
+``formal_validation`` and refuses to run without a split argument.
 """
 
 from __future__ import annotations
@@ -17,8 +17,8 @@ from .schema import ALLOWED_SPLITS, Example
 
 TRAINING_ALLOWED = frozenset({"train"})
 CALIBRATION_ALLOWED = frozenset({"train", "calibration"})
-EVALUATION_ALLOWED = frozenset({"dev", "test", "validation_tuning"})
-FORBIDDEN_TRAINING_SPLITS = frozenset({"validation_tuning"})
+EVALUATION_ALLOWED = frozenset({"dev", "test", "validation_tuning", "formal_validation"})
+FORBIDDEN_TRAINING_SPLITS = frozenset({"validation_tuning", "formal_validation"})
 
 
 class UnknownSplitError(ValueError):
@@ -26,7 +26,7 @@ class UnknownSplitError(ValueError):
 
 
 class EvaluationSplitRequiredError(ValueError):
-    """Formal evaluation must explicitly select dev or test."""
+    """Formal evaluation must explicitly select dev, test or formal_validation."""
 
 
 class TrainingSplitViolation(ValueError):
@@ -89,7 +89,10 @@ class SplitPolicy:
             if example.split not in ALLOWED_SPLITS:
                 report.unknown_example_ids.append(example.example_id)
                 continue
-            if self.allowed_splits == TRAINING_ALLOWED and example.split in FORBIDDEN_TRAINING_SPLITS:
+            if (
+                self.allowed_splits == TRAINING_ALLOWED
+                and example.split in FORBIDDEN_TRAINING_SPLITS
+            ):
                 raise TrainingSplitViolation(
                     f"{self.policy_name} training path received forbidden split "
                     f"{example.split!r} for example {example.example_id!r}"
@@ -110,7 +113,7 @@ class SplitPolicy:
 
 
 def require_explicit_eval_split(split: str | None) -> str:
-    """Evaluation must name dev or test explicitly."""
+    """Evaluation must name dev, test or formal_validation explicitly."""
     if split not in EVALUATION_ALLOWED:
         raise EvaluationSplitRequiredError(
             f"evaluation requires an explicit split: one of {sorted(EVALUATION_ALLOWED)}; got {split!r}"
@@ -121,3 +124,37 @@ def require_explicit_eval_split(split: str | None) -> str:
 def select_examples_for_split(examples: list[Example], split: str) -> list[Example]:
     split = require_explicit_eval_split(split)
     return [example for example in examples if example.split == split]
+
+
+def assert_formal_training_source(
+    examples_path: str | Path,
+    canonical_path: str | Path,
+    examples: list[Example],
+    validation_ids: set[str] | None = None,
+    policy_name: str = "formal_training",
+) -> None:
+    """Hard guard for formal training inputs.
+
+    In formal mode every training entry point must read the canonical
+    ``formal_train.jsonl`` and must never receive validation examples.  A
+    mismatch is a hard failure, never a warning.
+    """
+    actual = Path(examples_path).resolve()
+    expected = Path(canonical_path).resolve()
+    if actual != expected:
+        raise TrainingSplitViolation(
+            f"{policy_name} requires examples_path == canonical formal_train.jsonl; "
+            f"got {actual} != {expected}"
+        )
+    for example in examples:
+        if example.split not in TRAINING_ALLOWED or example.split in FORBIDDEN_TRAINING_SPLITS:
+            raise TrainingSplitViolation(
+                f"{policy_name} received disallowed split {example.split!r} for "
+                f"example {example.example_id!r}"
+            )
+    if validation_ids:
+        leaked = sorted({e.example_id for e in examples} & set(validation_ids))
+        if leaked:
+            raise TrainingSplitViolation(
+                f"{policy_name} contains validation example IDs: {leaked[:10]}"
+            )

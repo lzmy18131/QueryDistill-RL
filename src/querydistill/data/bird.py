@@ -10,14 +10,15 @@ never copies the full BIRD dataset into Git.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import sqlite3
 from dataclasses import dataclass, field
 from pathlib import Path
 
 from ..sql.executor import SafeSQLExecutor
+from ..utils import atomic_write_json, atomic_write_text
 from .schema import Example
-from ..utils import atomic_write_json, atomic_write_text, utc_now_iso
 
 
 @dataclass
@@ -79,6 +80,54 @@ def load_bird_mini_dev(path: str | Path) -> list[dict]:
     return json.loads(Path(path).read_text(encoding="utf-8"))
 
 
+def _bird_identity_payload(record: dict) -> dict:
+    """Canonical identity tuple for a BIRD example.
+
+    The raw filtered train source has no official ``question_id``, so the stable
+    ID must be derived from content that uniquely identifies the row.  We use a
+    canonical JSON object (sorted keys, UTF-8, no Python ``repr`` dependence)
+    rather than the built-in ``hash()``.
+    """
+    return {
+        "db_id": str(record["db_id"]),
+        "question": str(record["question"]),
+        "evidence": str(record.get("evidence") or "").strip(),
+        "gold_sql": str(record.get("SQL") or record.get("gold_sql") or "").strip(),
+    }
+
+
+def canonical_bird_example_id(record: dict, prefix: str = "bird-train") -> str:
+    """Return the stable canonical BIRD example ID.
+
+    If the source record provides an official stable ``question_id`` (Mini-Dev),
+    it is used verbatim.  Otherwise a SHA-256 digest of the canonical identity
+    payload is used; this is deterministic across processes and
+    ``PYTHONHASHSEED`` values.
+    """
+    question_id = record.get("question_id")
+    if question_id is not None:
+        return f"{prefix}-{question_id}"
+    canonical = json.dumps(
+        _bird_identity_payload(record),
+        sort_keys=True,
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+    digest = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+    return f"{prefix}-{digest}"
+
+
+def bird_content_signature(record: dict) -> str:
+    """SHA-256 of the canonical identity payload (used for ID migration)."""
+    canonical = json.dumps(
+        _bird_identity_payload(record),
+        sort_keys=True,
+        ensure_ascii=False,
+        separators=(",", ":"),
+    )
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
 def _bird_record_to_example(
     record: dict,
     db_paths: dict[str, Path],
@@ -96,11 +145,7 @@ def _bird_record_to_example(
     sql = str(record.get("SQL") or record.get("gold_sql") or "").strip()
     if not question or not sql or not schema_text:
         return None
-    question_id = record.get("question_id")
-    if question_id is not None:
-        example_id = f"{example_id_prefix}-{question_id}"
-    else:
-        example_id = f"{example_id_prefix}-{db_id}-{abs(hash((db_id, question))) % 10**8}"
+    example_id = canonical_bird_example_id(record, prefix=example_id_prefix)
     return Example(
         example_id=example_id,
         db_id=db_id,

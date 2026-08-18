@@ -6,7 +6,14 @@ it with sqlglot and reject:
 * multiple statements (including the ``SELECT 1; DROP TABLE x`` trick)
 * every mutating / administrative statement class
 * ``PRAGMA``, ``VACUUM``, ``ATTACH``, ``DETACH``, ``TRIGGER``
-* ``load_extension`` and the SQL ``replace into`` spelling
+* ``load_extension`` and the SQL ``REPLACE INTO`` spelling
+
+The scalar function ``REPLACE(...)`` is read-only and is allowed inside a
+single top-level SELECT / WITH-SELECT / UNION.  The destructive ``REPLACE
+INTO`` form is parsed by sqlglot as a ``Command`` (or ``INSERT OR REPLACE`` as
+an ``Insert``), so it is rejected by the statement and command checks below;
+we do not ban the ``replace`` AST key itself because that key is also used by
+the read-only scalar function.
 
 Only a single top-level ``SELECT`` (or ``UNION`` of selects, or ``WITH ...
 SELECT``) is allowed through to Layer 2.
@@ -34,7 +41,6 @@ FORBIDDEN_KEYS = frozenset(
         "vacuum",
         "command",
         "merge",
-        "replace",
         "load",
         "reindex",
         "trigger",

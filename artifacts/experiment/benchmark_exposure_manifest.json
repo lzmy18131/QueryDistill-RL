@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-08-17T13:56:47.928564+00:00",
+  "source": "birdsql/bird_mini_dev",
+  "exposure_reason": "real_gpu_pilot",
+  "locked": true,
+  "examples": [
+    {
+      "question_id": 1471,
+      "example_id": "bird-dev-1471",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1472,
+      "example_id": "bird-dev-1472",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1473,
+      "example_id": "bird-dev-1473",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1476,
+      "example_id": "bird-dev-1476",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1479,
+      "example_id": "bird-dev-1479",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1480,
+      "example_id": "bird-dev-1480",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1481,
+      "example_id": "bird-dev-1481",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1482,
+      "example_id": "bird-dev-1482",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1483,
+      "example_id": "bird-dev-1483",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1484,
+      "example_id": "bird-dev-1484",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1486,
+      "example_id": "bird-dev-1486",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1490,
+      "example_id": "bird-dev-1490",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1493,
+      "example_id": "bird-dev-1493",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1498,
+      "example_id": "bird-dev-1498",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1501,
+      "example_id": "bird-dev-1501",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1505,
+      "example_id": "bird-dev-1505",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1506,
+      "example_id": "bird-dev-1506",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1507,
+      "example_id": "bird-dev-1507",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1509,
+      "example_id": "bird-dev-1509",
+      "db_id": "debit_card_specializing"
+    },
+    {
+      "question_id": 1514,
+      "example_id": "bird-dev-1514",
+      "db_id": "debit_card_specializing"
+    }
+  ],
+  "count": 20
+}

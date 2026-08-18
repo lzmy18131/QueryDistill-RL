@@ -15,7 +15,9 @@ from pydantic import BaseModel, Field, field_validator
 
 from ..utils import load_jsonl
 
-ALLOWED_SPLITS = frozenset({"train", "dev", "test", "calibration", "validation_tuning"})
+ALLOWED_SPLITS = frozenset(
+    {"train", "dev", "test", "calibration", "validation_tuning", "formal_validation"}
+)
 _DB_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$")
 _EXAMPLE_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]{0,127}$")
 

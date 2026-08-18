@@ -15,11 +15,14 @@ single consumer GPU. Not intended for production database systems.
 ## Training data
 
 Real BIRD filtered train has been used for pilot experiments (88 paired
-examples for SFT/GRPO). A `validation_tuning` split (120 IDs) is reserved and
-never enters training. Formal 6601-row train onboarding is prepared; full DB
-set is not yet complete locally. All training/calibration paths are train-only
-by construction; dev/test are excluded by `SplitPolicy` and leakage rules in
-`src/querydistill/data/leakage.py`.
+examples for SFT/GRPO). The formal 6601-row BIRD dataset is fully onboarded
+with an 80-DB registry. Formal training must read the canonical
+`data/bird/splits/formal_train.jsonl` (6225 rows); `engineering_validation`
+(120) and `formal_validation` (256) are forbidden in every training,
+teacher-generation, and GPTQ-calibration path. Mini-Dev (500) is excluded from
+all training paths. All training/calibration paths are train-only by
+construction; dev/test/validation splits are enforced by `SplitPolicy` and
+leakage rules in `src/querydistill/data/leakage.py`.
 
 ## Deployment plans (not fully executed)
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T05:20:01.717053+00:00",
+  "generated_at": "2026-08-18T11:01:51.551614+00:00",
   "project_root": "D:\\LLMProjects\\QueryDistill-RL",
   "cache_root": "D:\\LLMCache",
   "smoke_statuses": {
@@ -131,20 +131,5 @@
       "compatibility_note": "Serve config, command builder, benchmark client and GPTQ compatibility checker are implemented and tested; only the live server smoke is unverified."
     }
   },
-  "first_round_rule": "This round only performs smoke-level verification. PASS/FAIL/SKIPPED/BLOCKED are recorded per artifact; no benchmark claims are made.",
-  "gptq_load": {
-    "updated_at": "2026-08-18T05:20:01.717053+00:00",
-    "status": "GPTQ_LOAD_VALIDATION_BLOCKED_ENVIRONMENT",
-    "reason": "Marlin JIT requires CUDA_HOME/nvcc, which is not installed in WSL; Ninja is present. Existing INT4 checkpoint is preserved.",
-    "quantization_status": "PASS"
-  },
-  "full_bird": {
-    "updated_at": "2026-08-18T05:20:01.717053+00:00",
-    "status": "FULL_BIRD_DATABASE_INCOMPLETE",
-    "filtered_train_rows": 6601,
-    "formal_train_core_rows": 6481,
-    "validation_tuning_rows": 120,
-    "missing_db_count": 60,
-    "final_select500_rows": 500
-  }
+  "first_round_rule": "This round only performs smoke-level verification. PASS/FAIL/SKIPPED/BLOCKED are recorded per artifact; no benchmark claims are made."
 }

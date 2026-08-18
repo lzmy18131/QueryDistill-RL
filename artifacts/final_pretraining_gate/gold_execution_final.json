@@ -1,0 +1,23 @@
+{
+  "source_rows": 6601,
+  "historical_success_under_3s": 5848,
+  "historical_timeout_count": 647,
+  "fixed_airline_success": 66,
+  "fixed_airline_total": 66,
+  "fixed_replace_success": 40,
+  "fixed_replace_total": 40,
+  "success_under_3s_actual": 6525,
+  "success_3_to_10s": 64,
+  "success_10_to_30s": 9,
+  "slow_success_30_to_120s": 2,
+  "normal_success_under_30s": 6598,
+  "total_success_including_slow": 6600,
+  "persistent_timeout_30s": 3,
+  "persistent_timeout_after_120s": 1,
+  "sqlite_error": 0,
+  "unsafe": 0,
+  "internal_error": 0,
+  "other": 0,
+  "executable_or_classified": 6601,
+  "audit_timeout_ms": 30000
+}

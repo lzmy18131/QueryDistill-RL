@@ -1,0 +1,29 @@
+{
+  "db_id": "airline",
+  "status": "RESOLVED",
+  "old_db": {
+    "path": "data/bird/quarantine/airline-11e57cdf74cb5ba6a4e91940506f08359bee5463fdf2d3bf50a2823c3c4c5e8a.sqlite",
+    "size_bytes": 169099264,
+    "sha256": "11e57cdf74cb5ba6a4e91940506f08359bee5463fdf2d3bf50a2823c3c4c5e8a",
+    "source": "birdsql/six-gym-sqlite HF mirror (wrong Postgres-flavoured airline)",
+    "table_count": 1,
+    "tables": ["aircrafts_data", "airports_data", "boarding_passes", "flights", "public", "seats", "ticket_flights", "tickets"]
+  },
+  "canonical_db": {
+    "path": "data/bird/train/databases/airline.sqlite",
+    "size_bytes": 122699776,
+    "sha256": "50308a01c2467df9370ce6ee45595c97af2a06b73e195f52444406d4cdad08a8",
+    "source": "prem-research/birdbench HF mirror / official BIRD train.zip airline.sqlite",
+    "source_revision": "hf-mirror.com prem-research/birdbench main train/train_databases/airline/airline.sqlite",
+    "table_count": 3,
+    "tables": ["Air Carriers", "Airlines", "Airports"]
+  },
+  "evidence": {
+    "gold_sql_tables_required": ["Airports", "Airlines", "Air Carriers"],
+    "old_db_missing_tables": ["Airports", "Airlines", "Air Carriers"],
+    "canonical_db_has_tables": true,
+    "airline_gold_execution_on_canonical": "66/66 executed in direct read-only smoke before final audit"
+  },
+  "action": "old DB moved to data/bird/quarantine; canonical DB installed in registry",
+  "resolved_at": "2026-08-18T00:00:00+00:00"
+}
