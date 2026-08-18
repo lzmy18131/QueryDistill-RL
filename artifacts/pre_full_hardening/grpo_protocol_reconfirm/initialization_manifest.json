@@ -1,0 +1,10 @@
+{
+  "initialization_source": "sft_adapter",
+  "adapter_path": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/distilled_sft",
+  "adapter_sha256": "fb860e915b441f836e8b8ea986ff240dc344c2e6c9f88ef1a137043c02280a9b",
+  "base_model": "/mnt/d/LLMProjects/QueryDistill-RL/models/qwen3-0.6b-base",
+  "base_config_sha256": "504a6b58c4271583724e66584b6b7698aea18450209df6b2f7582df0e89cee59",
+  "trainable_parameter_fingerprint_before": "a20f7760ad430f981badc6a5f381a7f5f846512bbd81f2f45514ca802fc497e1",
+  "trainable_param_sha256_before": "c361d5c5f4b1dfd47e0f39d7dee586252af1b7a221685dea09c9c7e83e6da4b6",
+  "created_at": "2026-08-18T04:47:33.145091+00:00"
+}

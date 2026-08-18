@@ -1,0 +1,7 @@
+{
+  "total": 6601,
+  "parse_success": 6601,
+  "select_only_count": 6601,
+  "unsupported_crud_or_multiple_count": 0,
+  "failure_types": {}
+}

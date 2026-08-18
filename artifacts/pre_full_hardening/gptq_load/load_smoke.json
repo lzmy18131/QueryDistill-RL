@@ -1,0 +1,6 @@
+{
+  "load_ok": false,
+  "error_type": "ModuleNotFoundError",
+  "error_message": "Marlin torch.ops kernels are not properly installed. Error: Marlin fp16: failed to build torch.ops JIT extension: CUDA_HOME environment variable is not set. Please set it to your CUDA install root. | build_root=/root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd | base_build_root=/root/.cache/gptqmodel/torch_extensions/marlin_fp16 | python=3.14.4 | pid=411 | TORCH_EXTENSIONS_DIR=/mnt/d/LLMCache/torch_extensions | GPTQMODEL_TORCH_EXTENSIONS_DIR= | candidate_binaries=/root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.so:missing, /root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.pyd:missing, /root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.dylib:missing, /root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.dll:missing | build_root_entries=[]",
+  "load_seconds": 184.20903825759888
+}

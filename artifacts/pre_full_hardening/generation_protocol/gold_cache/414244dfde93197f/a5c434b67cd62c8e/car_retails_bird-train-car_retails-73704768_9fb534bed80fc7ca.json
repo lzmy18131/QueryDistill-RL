@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      961
+    ]
+  ],
+  "columns": [
+    "SUM(t2.quantityOrdered)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 55.71,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

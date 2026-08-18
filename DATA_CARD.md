@@ -1,6 +1,10 @@
 # Data Card
 
-## Current dataset: querydistill-tiny-synthetic v1.0.0
+## Current datasets
+
+### querydistill-tiny-synthetic v1.0.0
+
+Engineering smoke fixture.
 
 | Property | Value |
 | --- | --- |
@@ -23,11 +27,19 @@
   never enter a model prompt (enforced by LeakageGuard + tests).
 * `calibration`: GPTQ calibration (train/calibration only; dev/test banned).
 
-## Planned real dataset (later round)
+## Real BIRD pilot data
 
-BIRD (or another clearly documented public Text-to-SQL benchmark) will be
-converted into this schema after the first code review. Until then the
-repository contains no downloaded BIRD data and makes no BIRD claims.
+Real BIRD filtered train has been used in engineering pilots:
+
+- Teacher diagnostic / collection / paired 88-example SFT/GRPO pilots
+- `validation_tuning` (120 IDs) is reserved and excluded from training
+- `formal_train_core` manifest prepared from the 6601-row filtered train source
+  (full DB set not yet complete locally)
+- 20 Mini-Dev examples are marked as engineering-pilot exposed in
+  `artifacts/experiment/benchmark_exposure_manifest.json` and must be disclosed
+  in any future formal report
+
+Full SQLite database files are not committed to Git.
 
 ## Distillation records
 

@@ -1,11 +1,11 @@
 # Model Card
 
-## Round-2 model usage
+## Model usage
 
-| Role | Model | Round-2 status |
+| Role | Model | Status |
 | --- | --- | --- |
-| Student (the training target) | Qwen/Qwen3-0.6B-Base | Downloaded locally at `models/qwen3-0.6b-base`; inference/SFT/GRPO/GPTQ smokes use it |
-| Teacher (offline candidate generation only) | Qwen/Qwen3-4B | Download FORBIDDEN in Round 2; only mock-teacher and config/dry-run are used |
+| Student (training target) | Qwen/Qwen3-0.6B-Base | Local `models/qwen3-0.6b-base`; real SFT/GRPO/GPTQ pilots use it |
+| Teacher (offline candidate generation) | Qwen/Qwen3-4B | Real 4-bit offline inference, `enable_thinking=False`; unloaded after generation |
 
 ## Intended use
 
@@ -14,10 +14,12 @@ single consumer GPU. Not intended for production database systems.
 
 ## Training data
 
-Round 2: synthetic tiny fixtures only (`tests/fixtures/tiny_sql`). All
-training/calibration paths are train-only by construction; dev/test are
-excluded by `SplitPolicy`. Later rounds: public benchmark train split with the
-leakage rules in `src/querydistill/data/leakage.py`.
+Real BIRD filtered train has been used for pilot experiments (88 paired
+examples for SFT/GRPO). A `validation_tuning` split (120 IDs) is reserved and
+never enters training. Formal 6601-row train onboarding is prepared; full DB
+set is not yet complete locally. All training/calibration paths are train-only
+by construction; dev/test are excluded by `SplitPolicy` and leakage rules in
+`src/querydistill/data/leakage.py`.
 
 ## Deployment plans (not fully executed in Round 2)
 

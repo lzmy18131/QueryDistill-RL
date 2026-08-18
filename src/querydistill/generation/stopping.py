@@ -13,6 +13,8 @@ from collections.abc import Sequence
 import torch
 from transformers import StoppingCriteria
 
+SQL_CLOSE_TAG = "</sql>"
+
 
 class StopAfterSqlClose(StoppingCriteria):
     """Stop each active sequence after it emits the ``</sql>`` terminator.
@@ -32,7 +34,7 @@ class StopAfterSqlClose(StoppingCriteria):
     def __init__(
         self, tokenizer, prompt_length: int | Sequence[int] | torch.Tensor | None = None
     ) -> None:
-        self.stop_ids = list(tokenizer("</sql>", add_special_tokens=False).input_ids)
+        self.stop_ids = list(tokenizer(SQL_CLOSE_TAG, add_special_tokens=False).input_ids)
         if not self.stop_ids:
             raise ValueError("tokenizer produced empty </sql> token ids")
         if prompt_length is None:
@@ -88,4 +90,4 @@ class StopAfterSqlClose(StoppingCriteria):
         return self._finished.clone()
 
 
-__all__ = ["StopAfterSqlClose"]
+__all__ = ["SQL_CLOSE_TAG", "StopAfterSqlClose"]

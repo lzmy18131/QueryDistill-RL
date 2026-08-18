@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      222
+    ]
+  ],
+  "columns": [
+    "COUNT(T2.city)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 175.37,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

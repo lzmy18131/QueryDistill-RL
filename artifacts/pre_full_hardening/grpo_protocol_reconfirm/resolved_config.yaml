@@ -1,0 +1,96 @@
+run_id: grpo-protocol-reconfirm
+config:
+  base_model_path: /mnt/d/LLMProjects/QueryDistill-RL/models/qwen3-0.6b-base
+  init_adapter_path: /mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/distilled_sft
+  init_merged_model_path: null
+  examples_path: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/splits/train_grpo_signal.jsonl
+  registry_path: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/db_registry.json
+  output_dir: /mnt/d/LLMProjects/QueryDistill-RL/checkpoints/pre_full_hardening/grpo_protocol_reconfirm
+  max_samples: 24
+  num_generations: 2
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 1
+  max_steps: 12
+  learning_rate: 1.0e-05
+  max_prompt_length: 1024
+  max_completion_length: 128
+  temperature: 1.0
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  lora_target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+  bf16: true
+  quantize_4bit: true
+  use_gradient_checkpointing: false
+  use_vllm: false
+  report_to: none
+  logging_steps: 1
+  save_steps: 12
+  seed: 3407
+  require_plan: false
+  steps_per_generation: 1
+  dry_run: false
+  resume: false
+  run_id: grpo-protocol-reconfirm
+  debug_full_trace: true
+  allowed_splits:
+  - train
+environment:
+  db_ids:
+  - address
+  - airline
+  - book_publishing_company
+  - books
+  - california_schools
+  - car_retails
+  - card_games
+  - codebase_community
+  - debit_card_specializing
+  - european_football_2
+  - financial
+  - formula_1
+  - hockey
+  - movie_3
+  - olympics
+  - public_review_platform
+  - student_club
+  - superhero
+  - thrombosis_prediction
+  - toxicology
+  databases:
+    address: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/address.sqlite
+    airline: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/airline.sqlite
+    book_publishing_company: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/book_publishing_company.sqlite
+    books: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/books.sqlite
+    california_schools: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/california_schools.sqlite
+    car_retails: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/car_retails.sqlite
+    card_games: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/card_games.sqlite
+    codebase_community: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/codebase_community.sqlite
+    debit_card_specializing: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/debit_card_specializing.sqlite
+    european_football_2: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/european_football_2.sqlite
+    financial: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/financial.sqlite
+    formula_1: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/formula_1.sqlite
+    hockey: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/hockey.sqlite
+    movie_3: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/movie_3.sqlite
+    olympics: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/olympics.sqlite
+    public_review_platform: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/train/databases/public_review_platform.sqlite
+    student_club: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/student_club.sqlite
+    superhero: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/superhero.sqlite
+    thrombosis_prediction: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/thrombosis_prediction.sqlite
+    toxicology: /mnt/d/LLMProjects/QueryDistill-RL/data/bird/mini_dev/databases/toxicology.sqlite
+  max_rows: 1000
+  max_execution_ms: 3000
+split_report:
+  policy: train_only
+  source_path: ''
+  total: 88
+  included: 88
+  excluded_by_split: {}
+  unknown_example_ids: []

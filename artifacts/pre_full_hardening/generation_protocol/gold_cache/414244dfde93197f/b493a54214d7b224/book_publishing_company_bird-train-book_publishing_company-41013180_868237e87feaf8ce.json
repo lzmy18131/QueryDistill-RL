@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      100
+    ]
+  ],
+  "columns": [
+    "job_lvl"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 48.2,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

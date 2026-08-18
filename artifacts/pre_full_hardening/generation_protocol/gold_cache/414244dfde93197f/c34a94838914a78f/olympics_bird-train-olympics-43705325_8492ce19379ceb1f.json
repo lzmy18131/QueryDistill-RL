@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      "2004 Summer"
+    ]
+  ],
+  "columns": [
+    "games_name"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 758.5,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "grpo",
+  "input_artifact": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/distilled_sft",
+  "input_sha256": "fb860e915b441f836e8b8ea986ff240dc344c2e6c9f88ef1a137043c02280a9b",
+  "output_artifact": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/pre_full_hardening/grpo_protocol_reconfirm/adapter",
+  "output_sha256": null,
+  "base_model": "/mnt/d/LLMProjects/QueryDistill-RL/models/qwen3-0.6b-base",
+  "adapter": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/pre_full_hardening/grpo_protocol_reconfirm/adapter",
+  "config_hash": "9abcac0dc79d280e7497d8b0a7bd5f6f3c24ff1a4c12649b77deeed006aa5ac9",
+  "created_at": "2026-08-18T04:49:23.699396+00:00",
+  "extra": {
+    "learning_signal": "GRPO_LEARNING_SIGNAL_PASS"
+  }
+}

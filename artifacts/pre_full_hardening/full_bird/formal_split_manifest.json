@@ -1,0 +1,9 @@
+{
+  "full_filtered_train_count": 6601,
+  "validation_tuning_count": 120,
+  "formal_train_core_count": 6481,
+  "formal_train_core_ids_hash": "ef5266a253df1d6ffc179bcc1db777a070fb4fbacae240f5facd4bfdcfd0392f",
+  "validation_tuning_ids_hash": "3076fb79f8213e85934c6006a15ddb9f4cb886a6f449970ccd3fb00d31fa1cdd",
+  "formal_train_core_db_count": 69,
+  "validation_tuning_db_count": 8
+}

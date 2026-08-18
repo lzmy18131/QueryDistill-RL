@@ -156,7 +156,16 @@ def main() -> None:
                     schema_tables=set(environment.table_names(example.db_id)),
                 )
                 strict_equivalent = verification.strict_equivalent
-            trace = reward.score_once(example, raw) if sql_to_score else None
+            reward_internal_error = False
+            reward_error_type = None
+            try:
+                trace = reward.score_once(example, raw)
+                if trace is None:
+                    raise RuntimeError("CompositeReward.score_once returned None")
+            except Exception as exc:  # noqa: BLE001 - diagnostic must fail loudly
+                trace = None
+                reward_internal_error = True
+                reward_error_type = f"{type(exc).__name__}: {exc}"
             record = {
                 "group_id": f"group-{group_id}",
                 "example_id": example.example_id,
@@ -173,6 +182,8 @@ def main() -> None:
                 "strict_equivalent": strict_equivalent,
                 "reward_components": trace.breakdown.as_dict() if trace else None,
                 "total_reward": trace.breakdown.total if trace else None,
+                "reward_internal_error": reward_internal_error,
+                "reward_error_type": reward_error_type,
                 "completion_tokens": len(generated_token_ids),
                 "finish_reason": "generated",
                 "stop_reason": stop_reason,
@@ -190,12 +201,18 @@ def main() -> None:
         groups.setdefault(r["group_id"], []).append(r)
     group_stds = []
     for _gid, items in groups.items():
-        rewards = [r["total_reward"] or 0.0 for r in items]
+        rewards = [r["total_reward"] if r["total_reward"] is not None else 0.0 for r in items]
         mean = sum(rewards) / len(rewards)
         std = (sum((x - mean) ** 2 for x in rewards) / len(rewards)) ** 0.5
         group_stds.append(std)
 
+    reward_internal_error_count = sum(1 for r in records if r.get("reward_internal_error"))
+    reward_none_count = sum(1 for r in records if r.get("total_reward") is None)
+
     metrics = {
+        "status": ("FAIL_REWARD_INTERNAL_ERROR" if reward_internal_error_count else "PASS"),
+        "reward_internal_error_count": reward_internal_error_count,
+        "reward_none_count": reward_none_count,
         "groups": len(groups),
         "completions": len(records),
         "raw_completion_unique_ratio": round(

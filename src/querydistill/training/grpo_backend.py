@@ -31,6 +31,7 @@ from ..utils import (
     atomic_write_json,
     atomic_write_text,
     load_json,
+    load_jsonl,
     sha256_file,
     utc_now_iso,
 )
@@ -168,6 +169,91 @@ def _parameter_delta(snapshot_before: dict[str, object], model) -> dict:
         "parameter_delta_l2": round(float(total_sq**0.5), 8),
         "max_abs_parameter_delta": round(float(max_abs), 8),
         "changed_parameter_tensor_count": changed,
+    }
+
+
+def build_grpo_generation_kwargs() -> dict:
+    """Return GRPO generation kwargs (SQL-close stopping is injected via subclass)."""
+    return {}
+
+
+def build_sql_stopping_criteria(tokenizer, prompt_length):
+    """Build the canonical SQL-close stopping criteria for a generation batch."""
+    from transformers import StoppingCriteriaList
+
+    from ..generation.stopping import StopAfterSqlClose
+
+    return StoppingCriteriaList([StopAfterSqlClose(tokenizer, prompt_length=prompt_length)])
+
+
+def _finite_reward(value) -> bool:
+    import math
+
+    if value is None:
+        return False
+    try:
+        return math.isfinite(float(value))
+    except (TypeError, ValueError):
+        return False
+
+
+def _reward_signal_stats(samples_path: Path) -> dict:
+    """Compute strict GRPO signal stats from reward_samples.jsonl.
+
+    A semantic-variance group is a group with reward_std > 0 where at least one
+    of parse/safety/execution/correctness components differs across rollouts.
+    """
+
+    if not samples_path.exists():
+        return {
+            "generation_group_count": 0,
+            "nonzero_reward_std_group_count": 0,
+            "zero_std_group_fraction": None,
+            "semantic_variance_group_count": 0,
+            "parse_valid_completion_count": 0,
+            "execution_success_count": 0,
+            "strict_correct_count": 0,
+            "all_rewards_finite": False,
+        }
+    samples = load_jsonl(samples_path)
+    groups: dict[str, list[dict]] = {}
+    for record in samples:
+        groups.setdefault(str(record.get("generation_group_id")), []).append(record)
+
+    nonzero = 0
+    semantic = 0
+    group_stds = []
+    for _gid, items in groups.items():
+        rewards = [r.get("reward") for r in items]
+        numeric = [float(r) for r in rewards if r is not None]
+        if not numeric:
+            group_stds.append(0.0)
+            continue
+        mean = sum(numeric) / len(numeric)
+        std = (sum((x - mean) ** 2 for x in numeric) / len(numeric)) ** 0.5
+        group_stds.append(std)
+        if std > 1e-9:
+            nonzero += 1
+            semantic_keys = ["parse_ok", "safe", "execution_success", "strict_equivalent"]
+            if any(len({r.get(k) for r in items}) > 1 for k in semantic_keys):
+                semantic += 1
+
+    parse_valid = sum(1 for r in samples if r.get("parse_ok"))
+    exec_success = sum(1 for r in samples if r.get("execution_success"))
+    strict_correct = sum(1 for r in samples if r.get("strict_equivalent"))
+    all_finite = all(_finite_reward(r.get("reward")) for r in samples) and bool(samples)
+    return {
+        "generation_group_count": len(groups),
+        "nonzero_reward_std_group_count": nonzero,
+        "zero_std_group_fraction": round((len(groups) - nonzero) / len(groups), 4)
+        if groups
+        else None,
+        "semantic_variance_group_count": semantic,
+        "parse_valid_completion_count": parse_valid,
+        "execution_success_count": exec_success,
+        "strict_correct_count": strict_correct,
+        "all_rewards_finite": all_finite,
+        "group_reward_stds": [round(s, 6) for s in group_stds],
     }
 
 
@@ -403,6 +489,90 @@ class GRPOSmokeRunner:
                 "GRPO smoke requires transformers/trl/peft/datasets installed"
             ) from exc
 
+        class SqlStoppingGRPOTrainer(GRPOTrainer):
+            """GRPOTrainer that forwards the tokenizer to ``generate``.
+
+            This is a narrow adapter for the SQL-close protocol. TRL 1.10 builds
+            ``GenerationConfig(stop_strings=...)`` but does not pass the tokenizer
+            to ``model.generate``, which Transformers requires. We only change the
+            regular text generation path; vLLM / continuous batching and the whole
+            GRPO optimization remain TRL-owned.
+            """
+
+            def _generate_single_turn(
+                self, prompt_ids, images, multimodal_fields, has_tool_images=False
+            ):
+                if self.use_vllm or self.use_transformers_continuous_batching or images:
+                    return super()._generate_single_turn(
+                        prompt_ids, images, multimodal_fields, has_tool_images
+                    )
+
+                import numpy as np
+                import torch
+                from trl.extras.profiling import profiling_context
+                from trl.models import unwrap_model_for_generation
+                from trl.trainer.utils import pad
+
+                device = self.accelerator.device
+                prompt_tensors = [torch.tensor(ids) for ids in prompt_ids]
+                padded_ids = pad(
+                    prompt_tensors,
+                    padding_value=self._tokenizer.pad_token_id,
+                    padding_side="left",
+                )
+                attention_mask = pad(
+                    [torch.ones_like(t) for t in prompt_tensors],
+                    padding_value=0,
+                    padding_side="left",
+                )
+                generate_inputs = {"input_ids": padded_ids, "attention_mask": attention_mask}
+                for k, v in multimodal_fields.items():
+                    if isinstance(v, torch.Tensor):
+                        generate_inputs[k] = v
+                    elif isinstance(v, list) and v and isinstance(v[0], list):
+                        generate_inputs[k] = pad(
+                            [torch.tensor(x) for x in v], padding_value=0, padding_side="left"
+                        )
+                    else:
+                        generate_inputs[k] = torch.tensor(np.array(v))
+                generate_inputs = {k: v.to(device) for k, v in generate_inputs.items()}
+
+                with (
+                    profiling_context(self, "transformers.generate"),
+                    unwrap_model_for_generation(
+                        self.model_wrapped,
+                        self.accelerator,
+                        gather_deepspeed3_params=self.args.ds3_gather_for_generation,
+                        generation_kwargs=self.generation_kwargs,
+                    ) as unwrapped_model,
+                    torch.no_grad(),
+                    self._dist.summon_full_params(self.model_wrapped, recurse=False),
+                ):
+                    prompt_completion_ids = unwrapped_model.generate(
+                        **generate_inputs,
+                        generation_config=self.generation_config,
+                        stopping_criteria=build_sql_stopping_criteria(
+                            self._tokenizer, generate_inputs["input_ids"].size(1)
+                        ),
+                    )
+                prompt_length = generate_inputs["input_ids"].size(1)
+                completion_ids = prompt_completion_ids[:, prompt_length:]
+
+                is_eos = completion_ids == self._tokenizer.eos_token_id
+                eos_idx = torch.full(
+                    (is_eos.size(0),), is_eos.size(1), dtype=torch.long, device=device
+                )
+                eos_idx[is_eos.any(dim=1)] = is_eos.int().argmax(dim=1)[is_eos.any(dim=1)]
+                sequence_indices = torch.arange(is_eos.size(1), device=device).expand(
+                    is_eos.size(0), -1
+                )
+                completion_mask = (sequence_indices <= eos_idx.unsqueeze(1)).int()
+                completion_ids = [
+                    c[m].tolist()
+                    for c, m in zip(completion_ids.cpu(), completion_mask.bool().cpu(), strict=True)
+                ]
+                return completion_ids, None
+
         dtype = (
             torch.bfloat16
             if (self.config.bf16 and torch.cuda.is_bf16_supported())
@@ -531,12 +701,16 @@ class GRPOSmokeRunner:
                 * self.config.num_generations
             )
         )
+        # Canonical SQL-close protocol: Transformers 5.15 GenerationConfig
+        # supports stop_strings; TRL forwards generation_kwargs into it.
+        generation_kwargs = build_grpo_generation_kwargs()
         training_args = GRPOConfig(
             output_dir=str(self.output_dir / "trainer"),
             per_device_train_batch_size=self.config.per_device_train_batch_size,
             gradient_accumulation_steps=self.config.gradient_accumulation_steps,
             num_generations=self.config.num_generations,
             generation_batch_size=generation_batch_size,
+            generation_kwargs=generation_kwargs,
             max_steps=self.config.max_steps,
             learning_rate=self.config.learning_rate,
             logging_steps=self.config.logging_steps,
@@ -553,7 +727,7 @@ class GRPOSmokeRunner:
             disable_tqdm=False,
         )
 
-        trainer = GRPOTrainer(
+        trainer = SqlStoppingGRPOTrainer(
             model=model,
             reward_funcs=[logger],
             args=training_args,
@@ -597,6 +771,35 @@ class GRPOSmokeRunner:
             init_manifest["trainable_param_sha256_before"] != param_sha_after
         )
         evidence.update(delta_evidence)
+
+        # Strict Phase 1.7 gates (see EXPERIMENT_PHASE_1.7 spec).
+        strict_gate = (
+            evidence.get("generation_group_count", 0) >= 8
+            and evidence.get("nonzero_reward_std_group_count", 0) >= 3
+            and evidence.get("nonzero_grad_step_count", 0) >= 2
+            and evidence.get("trainable_param_sha256_changed", False) is True
+            and evidence.get("parameter_delta_l2", 0.0) > 0.0
+            and evidence.get("changed_parameter_tensor_count", 0) > 0
+            and evidence.get("parse_valid_completion_count", 0) >= 1
+            and evidence.get("execution_success_count", 0) >= 1
+            and evidence.get("semantic_variance_group_count", 0) >= 1
+            and evidence.get("all_rewards_finite", False) is True
+        )
+        strong_confirmation_gate = (
+            evidence.get("generation_group_count", 0) >= 10
+            and evidence.get("nonzero_reward_std_group_count", 0) >= 5
+            and evidence.get("nonzero_grad_step_count", 0) >= 3
+            and evidence.get("parameter_delta_l2", 0.0) > 0.0
+            and evidence.get("semantic_variance_group_count", 0) >= 2
+            and evidence.get("execution_success_count", 0) >= 2
+        )
+        evidence["strict_grpo_signal_gate_pass"] = strict_gate
+        evidence["strong_confirmation_gate_pass"] = strong_confirmation_gate
+        if strict_gate:
+            evidence["learning_signal"] = "GRPO_LEARNING_SIGNAL_PASS"
+        else:
+            evidence["learning_signal"] = "GRPO_LEARNING_SIGNAL_INSUFFICIENT"
+
         parameter_delta_path = self.output_dir / "parameter_delta.json"
         atomic_write_json(
             parameter_delta_path,
@@ -662,6 +865,7 @@ class GRPOSmokeRunner:
         grad_norms = [
             float(entry.get("grad_norm", 0.0)) for entry in metrics if "grad_norm" in entry
         ]
+        stats = _reward_signal_stats(Path(self.output_dir) / "reward_samples.jsonl")
         has_variance = any(std > 0 for std in reward_stds)
         has_update = any(abs(grad) > 0 for grad in grad_norms) or (
             init_manifest.get("trainable_parameter_fingerprint_before") != fingerprint_after
@@ -681,6 +885,13 @@ class GRPOSmokeRunner:
             "reward_samples_logged": reward_samples_logged,
             "reward_std_values": reward_stds,
             "grad_norm_values": grad_norms,
+            "nonzero_grad_step_count": sum(1 for g in grad_norms if abs(g) > 1e-9),
+            "finite_grad_step_count": sum(
+                1
+                for g in grad_norms
+                if g == g and abs(g) != float("inf")  # noqa: PLR0124 - NaN check
+            ),
+            **stats,
             "initialization_source": init_manifest.get("initialization_source"),
             "adapter_path": init_manifest.get("adapter_path"),
             "adapter_sha256": init_manifest.get("adapter_sha256"),

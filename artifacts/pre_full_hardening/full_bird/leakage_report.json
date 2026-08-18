@@ -1,0 +1,7 @@
+{
+  "formal_train_core_vs_validation_overlap": 0,
+  "formal_train_core_vs_mini_dev_overlap": 0,
+  "validation_vs_mini_dev_overlap": 0,
+  "duplicate_normalized_question_count": 1,
+  "validation_tuning_never_in_formal_train": true
+}

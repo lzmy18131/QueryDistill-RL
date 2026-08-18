@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "reward_internal_error_count": 0,
+  "reward_none_count": 0,
+  "groups": 8,
+  "completions": 16,
+  "raw_completion_unique_ratio": 1.0,
+  "normalized_sql_unique_ratio": 0.9375,
+  "format_valid_rate": 0.875,
+  "parse_valid_rate": 0.875,
+  "safe_rate": 0.875,
+  "execution_success_rate": 0.375,
+  "strict_correct_rate": 0.1875,
+  "nonzero_reward_std_group_count": 5,
+  "nonzero_reward_std_group_fraction": 0.625,
+  "group_reward_stds": [
+    0.0,
+    0.0,
+    0.55,
+    0.55,
+    0.525,
+    0.475,
+    0.55,
+    0.0
+  ],
+  "mean_completion_tokens": 75.12,
+  "stop_at_sql_close_rate": 0.4375,
+  "truncation_rate": 0.5625,
+  "multiple_sql_block_rate": 0.125,
+  "format_invalid_but_sql_extractable_rate": 0.0,
+  "reward_histogram": {
+    "-0.80": 2,
+    "0.10": 8,
+    "0.20": 3,
+    "1.20": 3
+  },
+  "created_at": "2026-08-18T04:06:09.624512+00:00"
+}

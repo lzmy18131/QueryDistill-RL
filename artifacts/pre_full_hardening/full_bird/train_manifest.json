@@ -1,0 +1,9 @@
+{
+  "dataset_name": "birdsql/bird23-train-filtered",
+  "source_revision": "local raw snapshot",
+  "row_count": 6601,
+  "unique_example_ids": 6601,
+  "unique_db_count": 69,
+  "ids_hash": "dd3a3358e384ae9562e3c4541bb7abde24b3ac42c5bb0ed1b5679524e793df2f",
+  "content_metadata_hash": "36276b84f5fde9f88846b2eac41539087829955e42941d5bdc841c0840dcdf43"
+}

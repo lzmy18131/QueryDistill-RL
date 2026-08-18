@@ -3,14 +3,16 @@
 **Efficient Small-LLM Post-Training for Text-to-SQL via Knowledge Distillation,
 QLoRA, Verifiable Reinforcement Learning, GPTQ Quantization and vLLM Serving.**
 
-> **Status: BIRD PILOT (Phase 0)**
+> **Status: PRE-FULL HARDENING (Phase 1.7)**
 >
-> BIRD onboarding and protocol lock are implemented. The pilot is currently
-> `BIRD_PILOT_BLOCKED` until a real Qwen3-4B Teacher and real tiny SFT/GRPO are
-> run (see `reports/BIRD_PILOT_REPORT.md`). It is **not** production-ready, **not**
-> SOTA, and contains **no benchmark claims**. Only smoke-level training/inference
-> has been attempted, and every smoke result is recorded honestly as
-> PASS / FAIL / SKIPPED / BLOCKED.
+> Real Qwen3-4B Teacher, BIRD execution verification, 88-example paired
+> Gold/Distilled QLoRA SFT, real SQLite GRPO learning signal, GRPO
+> confirmation, and GPTQ INT4 quantization have all been **pilot-verified**.
+> This is **not** production-ready, **not** SOTA, and contains **no formal
+> benchmark claims**. The repository is in pre-full hardening: protocol-correct
+> GRPO reconfirmation and GPTQ load validation are being recorded; full 6601
+> BIRD onboarding is prepared but the full DB set is not yet present locally.
+> See `reports/PRE_FULL_HARDENING_REPORT.md`.
 
 ---
 

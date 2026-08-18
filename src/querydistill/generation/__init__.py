@@ -2,6 +2,6 @@
 
 from __future__ import annotations
 
-from .stopping import StopAfterSqlClose
+from .stopping import SQL_CLOSE_TAG, StopAfterSqlClose
 
-__all__ = ["StopAfterSqlClose"]
+__all__ = ["SQL_CLOSE_TAG", "StopAfterSqlClose"]
