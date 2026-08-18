@@ -90,15 +90,31 @@ See `artifacts/formal_readiness/formal_protocol_lock.json`.
 
 ## 16. Repository / GitHub Cleanup
 
-TBD.
+- `src/querydistill/data` tracked
+- tracked pyc = 0
+- tracked __pycache__ = 0
+- secret scan hits = 0
+- no full SQLite DBs / weights / venv committed
+- GitHub: `lzmy18131/QueryDistill-RL`
 
 ## 17. Fresh Clone Final Commit
 
-TBD.
+- Final tested code commit: `81cf1c29d7559ec758cda6b62146abf16ba153e9`
+- Fresh clone from that commit:
+  - compileall PASS
+  - import smoke PASS
+  - CLI --help PASS
+  - ruff PASS
+  - pytest 319 passed, 1 skipped
+- See `artifacts/formal_readiness/repository_integrity.json`
 
 ## 18. CPU Regression
 
-TBD.
+- compileall PASS
+- ruff format PASS
+- ruff check PASS
+- pytest 318 passed, 2 skipped (original worktree)
+- fresh clone pytest 319 passed, 1 skipped
 
 ## 19. Remaining Limitations
 
