@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      44
+    ]
+  ],
+  "columns": [
+    "COUNT(T2.event_name)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 39.17,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

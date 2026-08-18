@@ -1,0 +1,8 @@
+{
+  "failure_buckets": {
+    "wrong_result": 51,
+    "sqlite_execution_error": 25,
+    "verified": 24,
+    "unsafe_or_multiple_statement": 1
+  }
+}

@@ -1,0 +1,41 @@
+# Distilled-SFT local experiment config (NOT run in first round).
+# Matched with gold_local.yaml except the target SQL source.
+stage: sft
+model_name_or_path: Qwen/Qwen3-0.6B-Base
+template: qwen
+dataset_alias: querydistill_distilled
+dataset_dir: artifacts/sft/distilled_local/dataset
+source_examples_path: data/tiny_sql/examples.jsonl
+distillation_path: data/distilled/teacher.jsonl
+target_mode: distilled
+train_splits: [train]
+paired_manifest_path: artifacts/sft/paired_manifest.json
+strict_distilled: false
+output_dir: checkpoints/sft/distilled_local
+logging_dir: runs/sft/distilled_local
+finetuning_type: lora
+quantization_bit: 4
+double_quantization: true
+quantization_type: nf4
+compute_dtype: bf16
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+logging_steps: 5
+save_steps: 50
+save_total_limit: 2
+bf16: true
+fp16: false
+gradient_checkpointing: true
+report_to: none
+max_seq_length: 1024
+packing: false
+overwrite_output_dir: true
+resume_from_checkpoint: true

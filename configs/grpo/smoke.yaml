@@ -1,0 +1,30 @@
+# GRPO smoke (Round 2): tiny fixture + real SQLite reward + minimal TRL footprint.
+# Must initialize from a Distilled-SFT adapter, not from the base model.
+base_model_path: models/qwen3-0.6b-base
+init_adapter_path: checkpoints/sft/distilled_smoke
+init_merged_model_path: null
+examples_path: data/tiny_sql/examples.jsonl
+registry_path: tests/fixtures/tiny_sql/db_registry.json
+output_dir: artifacts/smoke/grpo
+max_samples: 8
+num_generations: 2
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+max_steps: 2
+learning_rate: 1.0e-5
+max_prompt_length: 256
+max_completion_length: 96
+temperature: 1.0
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+bf16: true
+quantize_4bit: true
+use_gradient_checkpointing: false
+use_vllm: false
+report_to: none
+logging_steps: 1
+save_steps: 1
+seed: 3407
+require_plan: false

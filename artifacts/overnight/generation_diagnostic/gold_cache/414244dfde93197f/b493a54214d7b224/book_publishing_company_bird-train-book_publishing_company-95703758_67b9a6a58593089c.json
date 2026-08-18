@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      "USA"
+    ]
+  ],
+  "columns": [
+    "country"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 39.76,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

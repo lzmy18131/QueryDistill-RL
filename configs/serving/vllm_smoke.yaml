@@ -1,0 +1,16 @@
+# vLLM smoke serving config (Round 2.1).
+# The smoke GPTQ output is artifacts/smoke/gptq/quantized; keep this aligned so
+# a future live smoke consumes the actual smoke artifact. Live serving remains
+# optional; if the serve environment cannot be completed, VLLM_NOT_SMOKE_VERIFIED
+# is recorded.
+model_path: artifacts/smoke/gptq/quantized
+host: 127.0.0.1
+port: 8000
+tensor_parallel_size: 1
+gpu_memory_utilization: 0.85
+max_model_len: 2048
+dtype: auto
+max_num_seqs: 8
+enforce_eager: false
+trust_remote_code: true
+api_key: querydistill-smoke

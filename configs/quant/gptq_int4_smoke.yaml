@@ -1,0 +1,15 @@
+# GPTQ INT4 smoke (GPTQModel).
+# Round 2 chain: GPTQ consumes the GRPO final adapter (not the Distilled-SFT
+# adapter and not the base model). Calibration NEVER touches dev/test splits.
+base_model_path: models/qwen3-0.6b-base
+adapter_path: artifacts/smoke/grpo/adapter
+merged_output_dir: checkpoints/merged/distilled_grpo_local
+output_dir: artifacts/smoke/gptq
+calibration_examples_path: data/tiny_sql/examples.jsonl
+max_calibration_samples: 8
+calibration_max_length: 512
+bits: 4
+group_size: 128
+desc_act: false
+sym: true
+batch_size: 1

@@ -1,0 +1,17 @@
+# Environments / caches
+.venv*/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Large local-only artifacts (not suitable for GitHub)
+models/
+data/
+checkpoints/
+*.safetensors
+*.bin
+*.zip
+logs/
+artifacts/runs/

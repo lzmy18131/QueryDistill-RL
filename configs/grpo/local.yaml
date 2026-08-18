@@ -1,0 +1,31 @@
+# GRPO local experiment config (Round 2.1).
+# Must start from the Distilled-SFT adapter; base-only GRPO is refused.
+# Main-line protocol is SQL-only (<sql>...</sql>), so require_plan=false.
+base_model_path: models/qwen3-0.6b-base
+init_adapter_path: checkpoints/sft/distilled_local
+init_merged_model_path: null
+examples_path: data/tiny_sql/examples.jsonl
+registry_path: tests/fixtures/tiny_sql/db_registry.json
+output_dir: checkpoints/grpo/distilled_grpo_local
+max_samples: null
+num_generations: 4
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 2
+max_steps: 200
+learning_rate: 1.0e-5
+max_prompt_length: 512
+max_completion_length: 256
+temperature: 1.0
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+bf16: true
+quantize_4bit: true
+use_gradient_checkpointing: false
+use_vllm: false
+report_to: none
+logging_steps: 5
+save_steps: 50
+seed: 3407
+require_plan: false

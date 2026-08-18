@@ -1,0 +1,37 @@
+# REAL BIRD Gold-SFT pilot (paired subset, real GPU).
+# Same hyperparameters as Distilled-SFT except target = gold SQL.
+stage: sft
+model_name_or_path: models/qwen3-0.6b-base
+template: qwen
+dataset_alias: querydistill_bird_pilot_gold
+dataset_dir: artifacts/pilot/gold_sft/dataset
+source_examples_path: data/bird/examples/train_pilot20.jsonl
+target_mode: gold
+train_splits: [train]
+paired_manifest_path: artifacts/pilot/paired/paired_manifest.json
+output_dir: checkpoints/pilot/gold_sft
+logging_dir: runs/pilot/gold_sft
+finetuning_type: lora
+quantization_bit: 4
+double_quantization: true
+quantization_type: nf4
+compute_dtype: bf16
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 1.0e-4
+num_train_epochs: 1.0
+max_steps: 2
+logging_steps: 1
+save_steps: 1
+bf16: true
+fp16: false
+gradient_checkpointing: true
+report_to: none
+max_seq_length: 1024
+packing: false
+overwrite_output_dir: true
+resume_from_checkpoint: true

@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      108450
+    ]
+  ],
+  "columns": [
+    "COUNT(T1.number_of_compliments)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 299.1,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

@@ -1,0 +1,11 @@
+{
+  "yaml_path": "/mnt/d/LLMProjects/QueryDistill-RL/artifacts/runs/fa57757f64434a20b04b805b49d4a58b/llamafactory_config.yaml",
+  "log_path": "/mnt/d/LLMProjects/QueryDistill-RL/artifacts/runs/fa57757f64434a20b04b805b49d4a58b/trainer.log",
+  "command": [
+    "/mnt/d/LLMProjects/QueryDistill-RL/.venv-sft/bin/llamafactory-cli",
+    "train",
+    "/mnt/d/LLMProjects/QueryDistill-RL/artifacts/runs/fa57757f64434a20b04b805b49d4a58b/llamafactory_config.yaml"
+  ],
+  "dry_run": false,
+  "returncode": 0
+}

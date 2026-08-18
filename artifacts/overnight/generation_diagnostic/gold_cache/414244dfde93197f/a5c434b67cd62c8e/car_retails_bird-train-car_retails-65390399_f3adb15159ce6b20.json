@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      "mnishi@classicmodelcars.com"
+    ]
+  ],
+  "columns": [
+    "email"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 49.46,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

@@ -1,0 +1,13 @@
+# Overnight Phase 1.6 GPTQ final-pilot from GRPO confirmation.
+base_model_path: models/qwen3-0.6b-base
+adapter_path: checkpoints/signal_recovery/grpo_confirmation/adapter
+merged_output_dir: checkpoints/signal_recovery/grpo_confirmation_merged
+output_dir: checkpoints/signal_recovery/grpo_confirmation_gptq
+calibration_examples_path: data/bird/splits/train_core.jsonl
+max_calibration_samples: 16
+calibration_max_length: 1024
+bits: 4
+group_size: 128
+desc_act: false
+sym: true
+batch_size: 1

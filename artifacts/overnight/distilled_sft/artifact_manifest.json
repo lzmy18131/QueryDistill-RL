@@ -1,0 +1,24 @@
+{
+  "stage": "sft",
+  "input_artifact": "/mnt/d/LLMProjects/QueryDistill-RL/data/bird/splits/train_core.jsonl",
+  "input_sha256": "464934fa102ddc5447546e7301327c816000a439670acbb70e5d77a0869a6b3b",
+  "output_artifact": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/distilled_sft",
+  "output_sha256": null,
+  "base_model": "/mnt/d/LLMProjects/QueryDistill-RL/models/qwen3-0.6b-base",
+  "adapter": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/distilled_sft",
+  "config_hash": "b4ec31ef43949d7544644976dafc0054d49a73b80197cd178895126e509771a3",
+  "created_at": "2026-08-17T17:57:58.163788+00:00",
+  "extra": {
+    "split_report": {
+      "policy": "train_only",
+      "source_path": "/mnt/d/LLMProjects/QueryDistill-RL/data/bird/splits/train_core.jsonl",
+      "total": 1142,
+      "included": 1142,
+      "excluded_by_split": {},
+      "unknown_example_ids": []
+    },
+    "target_mode": "distilled",
+    "paired_manifest": "/mnt/d/LLMProjects/QueryDistill-RL/artifacts/signal_recovery/paired/paired_manifest.json",
+    "run_id": "dd51d4ef2d754543ae014270e4b04f67"
+  }
+}

@@ -1,0 +1,13 @@
+# Future scale-out example ONLY. DeepSpeed has NOT been run in this project
+# and is NOT claimed anywhere in the README or resume. On this machine the
+# 0.6B QLoRA workload does not need ZeRO (see docs/SCALING.md).
+compute_environment: LOCAL_MACHINE
+deepspeed_config:
+  gradient_accumulation_steps: 4
+  zero_stage: 2
+  offload_optimizer:
+    device: none
+  bf16:
+    enabled: true
+  train_micro_batch_size_per_gpu: 1
+  wall_clock_breakdown: false

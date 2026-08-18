@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "rows": [
+    [
+      "Yoshi",
+      "Latimer",
+      "1989-06-11 00:00:00.0"
+    ]
+  ],
+  "columns": [
+    "fname",
+    "lname",
+    "hire_date"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 39.42,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

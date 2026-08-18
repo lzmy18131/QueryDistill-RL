@@ -1,0 +1,10 @@
+{
+  "querydistill_signal_gold": {
+    "file_name": "train.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

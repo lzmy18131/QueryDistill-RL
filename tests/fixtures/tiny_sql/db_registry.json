@@ -1,0 +1,7 @@
+{
+  "databases": {
+    "company": "databases/company.db",
+    "school": "databases/school.db",
+    "shop": "databases/shop.db"
+  }
+}

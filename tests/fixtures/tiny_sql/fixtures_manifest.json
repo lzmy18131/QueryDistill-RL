@@ -1,0 +1,21 @@
+{
+  "example_count": 42,
+  "split_counts": {
+    "train": 21,
+    "dev": 12,
+    "test": 9
+  },
+  "sha256_by_db": {
+    "company": "b12f083637c6212ef44a4853ded3893e8eef970642d96786578cf917a5ebf273",
+    "school": "4729fd06b52120710c7e696f3e6005194eb5a30453af58b26a9a9df44384b1ea",
+    "shop": "4fc215e3be0c8ba10544782fd1675b6810d6325ed160c1006495b58188afa45b"
+  },
+  "source": "querydistill-tiny-synthetic",
+  "source_version": "1.0.0",
+  "generated_at": "2026-08-16T17:42:57.204437+00:00",
+  "databases": {
+    "company": "D:\\LLMProjects\\QueryDistill-RL\\tests\\fixtures\\tiny_sql\\databases\\company.db",
+    "school": "D:\\LLMProjects\\QueryDistill-RL\\tests\\fixtures\\tiny_sql\\databases\\school.db",
+    "shop": "D:\\LLMProjects\\QueryDistill-RL\\tests\\fixtures\\tiny_sql\\databases\\shop.db"
+  }
+}

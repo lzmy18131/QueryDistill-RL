@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETED",
+  "run_id": "e626801defc6468090d6a5e2fc9b5d3d",
+  "run_fingerprint": {
+    "dataset_sha256": "c5f9b1500448db92439e553048a448e6b6721dc9ed73bcdad8c81bc4f86f982a",
+    "teacher_model": "Qwen/Qwen3-4B",
+    "teacher_model_revision": "main",
+    "teacher_prompt_version": "bird-v2",
+    "generation_config": {
+      "load_in_4bit": true,
+      "quant_type": "nf4",
+      "compute_dtype": "bfloat16",
+      "max_new_tokens": 256,
+      "temperature": 0.7,
+      "top_p": 0.95,
+      "do_sample": true
+    },
+    "num_candidates": 1,
+    "max_attempts": 2
+  },
+  "split_report": {
+    "policy": "train_only",
+    "source_path": "/mnt/d/LLMProjects/QueryDistill-RL/data/bird/splits/teacher_diagnostic_60.jsonl",
+    "total": 60,
+    "included": 60,
+    "excluded_by_split": {},
+    "unknown_example_ids": []
+  },
+  "output_path": "/mnt/d/LLMProjects/QueryDistill-RL/artifacts/signal_recovery/teacher_diagnostic/attempts.jsonl",
+  "teacher_model": "Qwen/Qwen3-4B",
+  "teacher_model_revision": "main",
+  "teacher_prompt_version": "bird-v2",
+  "generation_config": {
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "compute_dtype": "bfloat16",
+    "max_new_tokens": 256,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "do_sample": true
+  },
+  "num_candidates": 1,
+  "max_attempts": 2,
+  "seed": 20260817,
+  "created_at": "2026-08-17T13:58:12.680159+00:00",
+  "completed_at": "2026-08-17T14:27:57.931330+00:00"
+}

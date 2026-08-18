@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "quantized": true,
+  "bits": 4,
+  "group_size": 128,
+  "desc_act": false,
+  "sym": true,
+  "source_checkpoint": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/grpo_confirmation_merged",
+  "calibration_samples": 16,
+  "quantized_output": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/grpo_confirmation_gptq/quantized"
+}

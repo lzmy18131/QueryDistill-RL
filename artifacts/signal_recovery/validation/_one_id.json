@@ -1,0 +1,25 @@
+{
+  "selection_policy": "stratified_round_robin_validation_tuning",
+  "seed": 3407,
+  "count": 1,
+  "db_distribution": {
+    "address": 4,
+    "book_publishing_company": 4,
+    "books": 4,
+    "car_retails": 4,
+    "hockey": 4,
+    "movie_3": 4,
+    "olympics": 4,
+    "public_review_platform": 4
+  },
+  "example_ids": [
+    "bird-train-address-57759074"
+  ],
+  "examples": [
+    {
+      "example_id": "bird-train-address-57759074",
+      "db_id": "address",
+      "selection_order": 1
+    }
+  ]
+}

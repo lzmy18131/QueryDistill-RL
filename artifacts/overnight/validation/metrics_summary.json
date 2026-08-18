@@ -1,0 +1,139 @@
+{
+  "base": {
+    "records": 64,
+    "format_valid_rate": 0.1719,
+    "parse_valid_rate": 0.0625,
+    "safe_rate": 0.1406,
+    "execution_success_rate": 0.0781,
+    "strict_execution_accuracy": 0.0,
+    "stop_at_sql_close_rate": 0.0781,
+    "truncation_rate": 0.9219,
+    "multiple_sql_block_rate": 0.0312,
+    "mean_completion_tokens": 140.91,
+    "mode_counts": {
+      "deterministic": 32,
+      "sampled": 32
+    },
+    "per_mode": {
+      "deterministic": {
+        "records": 32,
+        "format_valid_rate": 0.0938,
+        "parse_valid_rate": 0.0938,
+        "safe_rate": 0.0938,
+        "execution_success_rate": 0.0625,
+        "strict_execution_accuracy": 0.0
+      },
+      "sampled": {
+        "records": 32,
+        "format_valid_rate": 0.25,
+        "parse_valid_rate": 0.0312,
+        "safe_rate": 0.1875,
+        "execution_success_rate": 0.0938,
+        "strict_execution_accuracy": 0.0
+      }
+    }
+  },
+  "gold_sft": {
+    "records": 64,
+    "format_valid_rate": 0.9531,
+    "parse_valid_rate": 0.9531,
+    "safe_rate": 0.9375,
+    "execution_success_rate": 0.3281,
+    "strict_execution_accuracy": 0.0781,
+    "stop_at_sql_close_rate": 0.9531,
+    "truncation_rate": 0.0469,
+    "multiple_sql_block_rate": 0.0156,
+    "mean_completion_tokens": 61.45,
+    "mode_counts": {
+      "deterministic": 32,
+      "sampled": 32
+    },
+    "per_mode": {
+      "deterministic": {
+        "records": 32,
+        "format_valid_rate": 0.9375,
+        "parse_valid_rate": 0.9375,
+        "safe_rate": 0.9375,
+        "execution_success_rate": 0.4062,
+        "strict_execution_accuracy": 0.1562
+      },
+      "sampled": {
+        "records": 32,
+        "format_valid_rate": 0.9688,
+        "parse_valid_rate": 0.9688,
+        "safe_rate": 0.9375,
+        "execution_success_rate": 0.25,
+        "strict_execution_accuracy": 0.0
+      }
+    }
+  },
+  "distilled_sft": {
+    "records": 64,
+    "format_valid_rate": 0.9688,
+    "parse_valid_rate": 0.9688,
+    "safe_rate": 0.9375,
+    "execution_success_rate": 0.5,
+    "strict_execution_accuracy": 0.1406,
+    "stop_at_sql_close_rate": 0.9688,
+    "truncation_rate": 0.0312,
+    "multiple_sql_block_rate": 0.0,
+    "mean_completion_tokens": 61.02,
+    "mode_counts": {
+      "deterministic": 32,
+      "sampled": 32
+    },
+    "per_mode": {
+      "deterministic": {
+        "records": 32,
+        "format_valid_rate": 0.9688,
+        "parse_valid_rate": 0.9688,
+        "safe_rate": 0.9688,
+        "execution_success_rate": 0.6562,
+        "strict_execution_accuracy": 0.1562
+      },
+      "sampled": {
+        "records": 32,
+        "format_valid_rate": 0.9688,
+        "parse_valid_rate": 0.9688,
+        "safe_rate": 0.9062,
+        "execution_success_rate": 0.3438,
+        "strict_execution_accuracy": 0.125
+      }
+    }
+  },
+  "grpo_confirmation": {
+    "records": 64,
+    "format_valid_rate": 0.9844,
+    "parse_valid_rate": 0.9844,
+    "safe_rate": 0.9844,
+    "execution_success_rate": 0.5,
+    "strict_execution_accuracy": 0.1875,
+    "stop_at_sql_close_rate": 0.9844,
+    "truncation_rate": 0.0156,
+    "multiple_sql_block_rate": 0.0,
+    "mean_completion_tokens": 58.19,
+    "mode_counts": {
+      "deterministic": 32,
+      "sampled": 32
+    },
+    "per_mode": {
+      "deterministic": {
+        "records": 32,
+        "format_valid_rate": 1.0,
+        "parse_valid_rate": 1.0,
+        "safe_rate": 1.0,
+        "execution_success_rate": 0.6562,
+        "strict_execution_accuracy": 0.2188
+      },
+      "sampled": {
+        "records": 32,
+        "format_valid_rate": 0.9688,
+        "parse_valid_rate": 0.9688,
+        "safe_rate": 0.9688,
+        "execution_success_rate": 0.3438,
+        "strict_execution_accuracy": 0.1562
+      }
+    }
+  },
+  "generated_at": "2026-08-17T21:19:03.098244+00:00"
+}

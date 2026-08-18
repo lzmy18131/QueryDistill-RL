@@ -1,0 +1,61 @@
+Failed to load /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+Failed to load /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+W0818 04:16:17.774000 402 .venv-wsl/lib/python3.14/site-packages/torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W0818 04:16:19.363000 402 .venv-wsl/lib/python3.14/site-packages/torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   0%|          | 1/310 [00:01<09:41,  1.88s/it]Loading weights:   1%|          | 3/310 [00:02<02:55,  1.75it/s]Loading weights:   2%|▏         | 5/310 [00:02<01:32,  3.29it/s]Loading weights:   5%|▍         | 14/310 [00:02<00:24, 12.26it/s]Loading weights:   6%|▌         | 18/310 [00:02<00:18, 15.75it/s]Loading weights:   8%|▊         | 25/310 [00:02<00:12, 22.54it/s]Loading weights:   9%|▉         | 29/310 [00:02<00:11, 24.92it/s]Loading weights:  12%|█▏        | 36/310 [00:02<00:08, 30.81it/s]Loading weights:  13%|█▎        | 41/310 [00:02<00:07, 34.42it/s]Loading weights:  15%|█▍        | 46/310 [00:03<00:07, 37.71it/s]Loading weights:  16%|█▋        | 51/310 [00:03<00:07, 36.84it/s]Loading weights:  19%|█▊        | 58/310 [00:03<00:05, 43.43it/s]Loading weights:  21%|██        | 64/310 [00:03<00:05, 44.99it/s]Loading weights:  23%|██▎       | 70/310 [00:03<00:04, 48.07it/s]Loading weights:  25%|██▍       | 77/310 [00:03<00:04, 53.76it/s]Loading weights:  27%|██▋       | 83/310 [00:03<00:04, 52.40it/s]Loading weights:  29%|██▉       | 91/310 [00:03<00:03, 59.48it/s]Loading weights:  32%|███▏      | 98/310 [00:04<00:06, 33.83it/s]Loading weights:  33%|███▎      | 103/310 [00:04<00:06, 31.93it/s]Loading weights:  36%|███▌      | 111/310 [00:04<00:04, 39.89it/s]Loading weights:  38%|███▊      | 117/310 [00:04<00:04, 42.41it/s]Loading weights:  40%|███▉      | 123/310 [00:04<00:04, 43.88it/s]Loading weights:  42%|████▏     | 129/310 [00:05<00:04, 36.96it/s]Loading weights:  43%|████▎     | 134/310 [00:05<00:04, 38.45it/s]Loading weights:  45%|████▍     | 139/310 [00:05<00:04, 34.75it/s]Loading weights:  46%|████▋     | 144/310 [00:05<00:04, 37.30it/s]Loading weights:  48%|████▊     | 149/310 [00:05<00:04, 36.46it/s]Loading weights:  51%|█████     | 157/310 [00:05<00:03, 43.64it/s]Loading weights:  52%|█████▏    | 162/310 [00:05<00:03, 40.85it/s]Loading weights:  54%|█████▍    | 167/310 [00:05<00:03, 42.36it/s]Loading weights:  55%|█████▌    | 172/310 [00:06<00:03, 36.96it/s]Loading weights:  58%|█████▊    | 179/310 [00:06<00:03, 42.51it/s]Loading weights:  60%|█████▉    | 185/310 [00:06<00:02, 45.79it/s]Loading weights:  62%|██████▏   | 191/310 [00:06<00:02, 45.28it/s]Loading weights:  63%|██████▎   | 196/310 [00:06<00:02, 44.16it/s]Loading weights:  65%|██████▌   | 202/310 [00:06<00:02, 45.34it/s]Loading weights:  68%|██████▊   | 210/310 [00:06<00:01, 51.62it/s]Loading weights:  70%|██████▉   | 216/310 [00:06<00:01, 50.55it/s]Loading weights:  72%|███████▏  | 222/310 [00:07<00:01, 52.82it/s]Loading weights:  74%|███████▎  | 228/310 [00:07<00:01, 48.49it/s]Loading weights:  75%|███████▌  | 234/310 [00:07<00:01, 47.10it/s]Loading weights:  77%|███████▋  | 239/310 [00:07<00:01, 44.04it/s]Loading weights:  79%|███████▉  | 245/310 [00:07<00:01, 43.91it/s]Loading weights:  81%|████████  | 250/310 [00:07<00:02, 28.92it/s]Loading weights:  82%|████████▏ | 254/310 [00:08<00:02, 27.81it/s]Loading weights:  83%|████████▎ | 258/310 [00:08<00:01, 26.56it/s]Loading weights:  85%|████████▌ | 264/310 [00:08<00:01, 31.85it/s]Loading weights:  86%|████████▋ | 268/310 [00:08<00:01, 27.36it/s]Loading weights:  88%|████████▊ | 272/310 [00:08<00:01, 22.61it/s]Loading weights:  89%|████████▊ | 275/310 [00:09<00:01, 20.85it/s]Loading weights:  90%|█████████ | 279/310 [00:09<00:01, 18.80it/s]Loading weights:  91%|█████████ | 282/310 [00:09<00:01, 19.73it/s]Loading weights:  92%|█████████▏| 285/310 [00:09<00:01, 18.05it/s]Loading weights:  93%|█████████▎| 287/310 [00:09<00:01, 16.89it/s]Loading weights:  93%|█████████▎| 289/310 [00:09<00:01, 16.13it/s]Loading weights:  94%|█████████▍| 291/310 [00:10<00:01, 11.48it/s]Loading weights:  96%|█████████▌| 297/310 [00:10<00:00, 18.83it/s]Loading weights:  97%|█████████▋| 302/310 [00:10<00:00, 22.28it/s]Loading weights: 100%|█████████▉| 309/310 [00:10<00:00, 30.90it/s]Loading weights: 100%|██████████| 310/310 [00:10<00:00, 28.95it/s]
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /mnt/d/LLMProjects/QueryDistill-RL/src/querydistill/cli.py:554 in train_grpo │
+│                                                                              │
+│   551 │                                                                      │
+│   552 │   runner = GRPOSmokeRunner(config)                                   │
+│   553 │   try:                                                               │
+│ ❱ 554 │   │   result = runner.run(dry_run=dry_run)                           │
+│   555 │   except GRPOBlockedError as exc:                                    │
+│   556 │   │   typer.echo(f"BLOCKED: {exc}")                                  │
+│   557 │   │   typer.echo(f"status file: {settings.smoke_dir('grpo') /        │
+│       'status.json'}")                                                       │
+│                                                                              │
+│ /mnt/d/LLMProjects/QueryDistill-RL/src/querydistill/training/grpo_backend.py │
+│ :382 in run                                                                  │
+│                                                                              │
+│   379 │   │   │   )                                                          │
+│   380 │   │   │   return {"status": "DRY_RUN", "examples":                   │
+│       len(self.examples)}                                                    │
+│   381 │   │                                                                  │
+│ ❱ 382 │   │   return self._train()                                           │
+│   383 │                                                                      │
+│   384 │   def _train(self) -> dict:                                          │
+│   385 │   │   try:                                                           │
+│                                                                              │
+│ /mnt/d/LLMProjects/QueryDistill-RL/src/querydistill/training/grpo_backend.py │
+│ :522 in _train                                                               │
+│                                                                              │
+│   519 │   │   │   run_id=self.run_id,                                        │
+│   520 │   │   )                                                              │
+│   521 │   │                                                                  │
+│ ❱ 522 │   │   training_args = GRPOConfig(                                    │
+│   523 │   │   │   output_dir=str(self.output_dir / "trainer"),               │
+│   524 │   │   │                                                              │
+│       per_device_train_batch_size=self.config.per_device_train_batch_size,   │
+│   525 │   │   │                                                              │
+│       gradient_accumulation_steps=self.config.gradient_accumulation_steps,   │
+│ in __init__:192                                                              │
+│                                                                              │
+│ /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/tr │
+│ l/trainer/grpo_config.py:1099 in __post_init__                               │
+│                                                                              │
+│   1096 │   │   elif self.generation_batch_size is None and                   │
+│        self.steps_per_generation is not None:                                │
+│   1097 │   │   │   self.generation_batch_size =                              │
+│        self.per_device_train_batch_size * num_processes *                    │
+│        self.steps_per_generation                                             │
+│   1098 │   │   else:                                                         │
+│ ❱ 1099 │   │   │   raise ValueError(                                         │
+│   1100 │   │   │   │   "'generation_batch_size' and 'steps_per_generation'   │
+│        can not be both configured at the same time"                          │
+│   1101 │   │   │   )                                                         │
+│   1102                                                                       │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: 'generation_batch_size' and 'steps_per_generation' can not be both 
+configured at the same time

@@ -1,0 +1,55 @@
+{
+  "example_ids": [
+    "bird-train-book_publishing_company-85140791",
+    "bird-train-book_publishing_company-33176933",
+    "bird-train-book_publishing_company-61500811",
+    "bird-train-book_publishing_company-82258234",
+    "bird-train-book_publishing_company-78044176",
+    "bird-train-book_publishing_company-95701259",
+    "bird-train-book_publishing_company-11064587",
+    "bird-train-book_publishing_company-30675742",
+    "bird-train-book_publishing_company-82311821",
+    "bird-train-book_publishing_company-64756430",
+    "bird-train-book_publishing_company-60509504",
+    "bird-train-book_publishing_company-57609287",
+    "bird-train-book_publishing_company-92731998",
+    "bird-train-book_publishing_company-58063630",
+    "bird-train-book_publishing_company-47348312",
+    "bird-train-book_publishing_company-24877452"
+  ],
+  "splits": [
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train",
+    "train"
+  ],
+  "contamination_check": "all selected splits in {train, calibration}",
+  "split_report": {
+    "policy": "calibration",
+    "source_path": "/mnt/d/LLMProjects/QueryDistill-RL/data/bird/splits/train_core.jsonl",
+    "total": 1142,
+    "included": 1142,
+    "excluded_by_split": {},
+    "unknown_example_ids": []
+  },
+  "tokenized_report": {
+    "policy": "calibration",
+    "source_path": "/mnt/d/LLMProjects/QueryDistill-RL/data/bird/splits/train_core.jsonl",
+    "total": 1142,
+    "included": 1142,
+    "excluded_by_split": {},
+    "unknown_example_ids": []
+  }
+}

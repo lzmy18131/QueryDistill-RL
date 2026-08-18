@@ -1,0 +1,13 @@
+# BIRD GPTQ pilot config.
+base_model_path: models/qwen3-0.6b-base
+adapter_path: checkpoints/bird/grpo/adapter
+merged_output_dir: checkpoints/bird/merged
+output_dir: checkpoints/bird/gptq
+calibration_examples_path: data/bird/examples/train.jsonl
+max_calibration_samples: 16
+calibration_max_length: 1024
+bits: 4
+group_size: 128
+desc_act: false
+sym: true
+batch_size: 1

@@ -1,0 +1,1299 @@
+{
+  "selection_policy": "stratified_round_robin_train_core_excluding_diagnostic",
+  "seed": 20260817,
+  "count": 256,
+  "db_distribution": {
+    "address": 32,
+    "book_publishing_company": 32,
+    "books": 32,
+    "car_retails": 32,
+    "hockey": 32,
+    "movie_3": 32,
+    "olympics": 32,
+    "public_review_platform": 32
+  },
+  "examples": [
+    {
+      "example_id": "bird-train-address-20606175",
+      "db_id": "address",
+      "selection_order": 1
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-83561241",
+      "db_id": "book_publishing_company",
+      "selection_order": 2
+    },
+    {
+      "example_id": "bird-train-books-64640326",
+      "db_id": "books",
+      "selection_order": 3
+    },
+    {
+      "example_id": "bird-train-car_retails-39521481",
+      "db_id": "car_retails",
+      "selection_order": 4
+    },
+    {
+      "example_id": "bird-train-hockey-94615043",
+      "db_id": "hockey",
+      "selection_order": 5
+    },
+    {
+      "example_id": "bird-train-movie_3-45760339",
+      "db_id": "movie_3",
+      "selection_order": 6
+    },
+    {
+      "example_id": "bird-train-olympics-60860156",
+      "db_id": "olympics",
+      "selection_order": 7
+    },
+    {
+      "example_id": "bird-train-public_review_platform-38338706",
+      "db_id": "public_review_platform",
+      "selection_order": 8
+    },
+    {
+      "example_id": "bird-train-address-54527649",
+      "db_id": "address",
+      "selection_order": 9
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-53887170",
+      "db_id": "book_publishing_company",
+      "selection_order": 10
+    },
+    {
+      "example_id": "bird-train-books-93791790",
+      "db_id": "books",
+      "selection_order": 11
+    },
+    {
+      "example_id": "bird-train-car_retails-46806171",
+      "db_id": "car_retails",
+      "selection_order": 12
+    },
+    {
+      "example_id": "bird-train-hockey-60522298",
+      "db_id": "hockey",
+      "selection_order": 13
+    },
+    {
+      "example_id": "bird-train-movie_3-54009378",
+      "db_id": "movie_3",
+      "selection_order": 14
+    },
+    {
+      "example_id": "bird-train-olympics-59697281",
+      "db_id": "olympics",
+      "selection_order": 15
+    },
+    {
+      "example_id": "bird-train-public_review_platform-40567349",
+      "db_id": "public_review_platform",
+      "selection_order": 16
+    },
+    {
+      "example_id": "bird-train-address-97284155",
+      "db_id": "address",
+      "selection_order": 17
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-82311821",
+      "db_id": "book_publishing_company",
+      "selection_order": 18
+    },
+    {
+      "example_id": "bird-train-books-24666112",
+      "db_id": "books",
+      "selection_order": 19
+    },
+    {
+      "example_id": "bird-train-car_retails-3095744",
+      "db_id": "car_retails",
+      "selection_order": 20
+    },
+    {
+      "example_id": "bird-train-hockey-12546659",
+      "db_id": "hockey",
+      "selection_order": 21
+    },
+    {
+      "example_id": "bird-train-movie_3-91974191",
+      "db_id": "movie_3",
+      "selection_order": 22
+    },
+    {
+      "example_id": "bird-train-olympics-54897830",
+      "db_id": "olympics",
+      "selection_order": 23
+    },
+    {
+      "example_id": "bird-train-public_review_platform-77617577",
+      "db_id": "public_review_platform",
+      "selection_order": 24
+    },
+    {
+      "example_id": "bird-train-address-14551101",
+      "db_id": "address",
+      "selection_order": 25
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-48266359",
+      "db_id": "book_publishing_company",
+      "selection_order": 26
+    },
+    {
+      "example_id": "bird-train-books-73034584",
+      "db_id": "books",
+      "selection_order": 27
+    },
+    {
+      "example_id": "bird-train-car_retails-14381073",
+      "db_id": "car_retails",
+      "selection_order": 28
+    },
+    {
+      "example_id": "bird-train-hockey-79206981",
+      "db_id": "hockey",
+      "selection_order": 29
+    },
+    {
+      "example_id": "bird-train-movie_3-71585977",
+      "db_id": "movie_3",
+      "selection_order": 30
+    },
+    {
+      "example_id": "bird-train-olympics-83955926",
+      "db_id": "olympics",
+      "selection_order": 31
+    },
+    {
+      "example_id": "bird-train-public_review_platform-51318673",
+      "db_id": "public_review_platform",
+      "selection_order": 32
+    },
+    {
+      "example_id": "bird-train-address-56619562",
+      "db_id": "address",
+      "selection_order": 33
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-34575685",
+      "db_id": "book_publishing_company",
+      "selection_order": 34
+    },
+    {
+      "example_id": "bird-train-books-50845175",
+      "db_id": "books",
+      "selection_order": 35
+    },
+    {
+      "example_id": "bird-train-car_retails-10381243",
+      "db_id": "car_retails",
+      "selection_order": 36
+    },
+    {
+      "example_id": "bird-train-hockey-35115949",
+      "db_id": "hockey",
+      "selection_order": 37
+    },
+    {
+      "example_id": "bird-train-movie_3-34476602",
+      "db_id": "movie_3",
+      "selection_order": 38
+    },
+    {
+      "example_id": "bird-train-olympics-3741701",
+      "db_id": "olympics",
+      "selection_order": 39
+    },
+    {
+      "example_id": "bird-train-public_review_platform-12512801",
+      "db_id": "public_review_platform",
+      "selection_order": 40
+    },
+    {
+      "example_id": "bird-train-address-5521338",
+      "db_id": "address",
+      "selection_order": 41
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-64756430",
+      "db_id": "book_publishing_company",
+      "selection_order": 42
+    },
+    {
+      "example_id": "bird-train-books-18136427",
+      "db_id": "books",
+      "selection_order": 43
+    },
+    {
+      "example_id": "bird-train-car_retails-958201",
+      "db_id": "car_retails",
+      "selection_order": 44
+    },
+    {
+      "example_id": "bird-train-hockey-44270139",
+      "db_id": "hockey",
+      "selection_order": 45
+    },
+    {
+      "example_id": "bird-train-movie_3-68047394",
+      "db_id": "movie_3",
+      "selection_order": 46
+    },
+    {
+      "example_id": "bird-train-olympics-62852479",
+      "db_id": "olympics",
+      "selection_order": 47
+    },
+    {
+      "example_id": "bird-train-public_review_platform-68713262",
+      "db_id": "public_review_platform",
+      "selection_order": 48
+    },
+    {
+      "example_id": "bird-train-address-14090194",
+      "db_id": "address",
+      "selection_order": 49
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-5952587",
+      "db_id": "book_publishing_company",
+      "selection_order": 50
+    },
+    {
+      "example_id": "bird-train-books-96284196",
+      "db_id": "books",
+      "selection_order": 51
+    },
+    {
+      "example_id": "bird-train-car_retails-92712835",
+      "db_id": "car_retails",
+      "selection_order": 52
+    },
+    {
+      "example_id": "bird-train-hockey-5828247",
+      "db_id": "hockey",
+      "selection_order": 53
+    },
+    {
+      "example_id": "bird-train-movie_3-86830440",
+      "db_id": "movie_3",
+      "selection_order": 54
+    },
+    {
+      "example_id": "bird-train-olympics-62141353",
+      "db_id": "olympics",
+      "selection_order": 55
+    },
+    {
+      "example_id": "bird-train-public_review_platform-57486014",
+      "db_id": "public_review_platform",
+      "selection_order": 56
+    },
+    {
+      "example_id": "bird-train-address-24289748",
+      "db_id": "address",
+      "selection_order": 57
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-95591864",
+      "db_id": "book_publishing_company",
+      "selection_order": 58
+    },
+    {
+      "example_id": "bird-train-books-87912115",
+      "db_id": "books",
+      "selection_order": 59
+    },
+    {
+      "example_id": "bird-train-car_retails-24326858",
+      "db_id": "car_retails",
+      "selection_order": 60
+    },
+    {
+      "example_id": "bird-train-hockey-69047273",
+      "db_id": "hockey",
+      "selection_order": 61
+    },
+    {
+      "example_id": "bird-train-movie_3-34156130",
+      "db_id": "movie_3",
+      "selection_order": 62
+    },
+    {
+      "example_id": "bird-train-olympics-39891898",
+      "db_id": "olympics",
+      "selection_order": 63
+    },
+    {
+      "example_id": "bird-train-public_review_platform-56354751",
+      "db_id": "public_review_platform",
+      "selection_order": 64
+    },
+    {
+      "example_id": "bird-train-address-98519517",
+      "db_id": "address",
+      "selection_order": 65
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-59536780",
+      "db_id": "book_publishing_company",
+      "selection_order": 66
+    },
+    {
+      "example_id": "bird-train-books-99770502",
+      "db_id": "books",
+      "selection_order": 67
+    },
+    {
+      "example_id": "bird-train-car_retails-68014051",
+      "db_id": "car_retails",
+      "selection_order": 68
+    },
+    {
+      "example_id": "bird-train-hockey-30497041",
+      "db_id": "hockey",
+      "selection_order": 69
+    },
+    {
+      "example_id": "bird-train-movie_3-40965342",
+      "db_id": "movie_3",
+      "selection_order": 70
+    },
+    {
+      "example_id": "bird-train-olympics-76037523",
+      "db_id": "olympics",
+      "selection_order": 71
+    },
+    {
+      "example_id": "bird-train-public_review_platform-19900794",
+      "db_id": "public_review_platform",
+      "selection_order": 72
+    },
+    {
+      "example_id": "bird-train-address-45753209",
+      "db_id": "address",
+      "selection_order": 73
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-92731998",
+      "db_id": "book_publishing_company",
+      "selection_order": 74
+    },
+    {
+      "example_id": "bird-train-books-84333512",
+      "db_id": "books",
+      "selection_order": 75
+    },
+    {
+      "example_id": "bird-train-car_retails-19535152",
+      "db_id": "car_retails",
+      "selection_order": 76
+    },
+    {
+      "example_id": "bird-train-hockey-23181025",
+      "db_id": "hockey",
+      "selection_order": 77
+    },
+    {
+      "example_id": "bird-train-movie_3-46074070",
+      "db_id": "movie_3",
+      "selection_order": 78
+    },
+    {
+      "example_id": "bird-train-olympics-98450211",
+      "db_id": "olympics",
+      "selection_order": 79
+    },
+    {
+      "example_id": "bird-train-public_review_platform-76346219",
+      "db_id": "public_review_platform",
+      "selection_order": 80
+    },
+    {
+      "example_id": "bird-train-address-30681746",
+      "db_id": "address",
+      "selection_order": 81
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-88981552",
+      "db_id": "book_publishing_company",
+      "selection_order": 82
+    },
+    {
+      "example_id": "bird-train-books-2292282",
+      "db_id": "books",
+      "selection_order": 83
+    },
+    {
+      "example_id": "bird-train-car_retails-74632186",
+      "db_id": "car_retails",
+      "selection_order": 84
+    },
+    {
+      "example_id": "bird-train-hockey-89992775",
+      "db_id": "hockey",
+      "selection_order": 85
+    },
+    {
+      "example_id": "bird-train-movie_3-39572870",
+      "db_id": "movie_3",
+      "selection_order": 86
+    },
+    {
+      "example_id": "bird-train-olympics-30669005",
+      "db_id": "olympics",
+      "selection_order": 87
+    },
+    {
+      "example_id": "bird-train-public_review_platform-26327878",
+      "db_id": "public_review_platform",
+      "selection_order": 88
+    },
+    {
+      "example_id": "bird-train-address-53667212",
+      "db_id": "address",
+      "selection_order": 89
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-33176933",
+      "db_id": "book_publishing_company",
+      "selection_order": 90
+    },
+    {
+      "example_id": "bird-train-books-94697065",
+      "db_id": "books",
+      "selection_order": 91
+    },
+    {
+      "example_id": "bird-train-car_retails-82773573",
+      "db_id": "car_retails",
+      "selection_order": 92
+    },
+    {
+      "example_id": "bird-train-hockey-20775017",
+      "db_id": "hockey",
+      "selection_order": 93
+    },
+    {
+      "example_id": "bird-train-movie_3-94236888",
+      "db_id": "movie_3",
+      "selection_order": 94
+    },
+    {
+      "example_id": "bird-train-olympics-27199035",
+      "db_id": "olympics",
+      "selection_order": 95
+    },
+    {
+      "example_id": "bird-train-public_review_platform-67769027",
+      "db_id": "public_review_platform",
+      "selection_order": 96
+    },
+    {
+      "example_id": "bird-train-address-96836768",
+      "db_id": "address",
+      "selection_order": 97
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-24877452",
+      "db_id": "book_publishing_company",
+      "selection_order": 98
+    },
+    {
+      "example_id": "bird-train-books-87462674",
+      "db_id": "books",
+      "selection_order": 99
+    },
+    {
+      "example_id": "bird-train-car_retails-85209439",
+      "db_id": "car_retails",
+      "selection_order": 100
+    },
+    {
+      "example_id": "bird-train-hockey-12748773",
+      "db_id": "hockey",
+      "selection_order": 101
+    },
+    {
+      "example_id": "bird-train-movie_3-88102811",
+      "db_id": "movie_3",
+      "selection_order": 102
+    },
+    {
+      "example_id": "bird-train-olympics-34766697",
+      "db_id": "olympics",
+      "selection_order": 103
+    },
+    {
+      "example_id": "bird-train-public_review_platform-60550159",
+      "db_id": "public_review_platform",
+      "selection_order": 104
+    },
+    {
+      "example_id": "bird-train-address-41494308",
+      "db_id": "address",
+      "selection_order": 105
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-85476346",
+      "db_id": "book_publishing_company",
+      "selection_order": 106
+    },
+    {
+      "example_id": "bird-train-books-54437157",
+      "db_id": "books",
+      "selection_order": 107
+    },
+    {
+      "example_id": "bird-train-car_retails-60465826",
+      "db_id": "car_retails",
+      "selection_order": 108
+    },
+    {
+      "example_id": "bird-train-hockey-42134115",
+      "db_id": "hockey",
+      "selection_order": 109
+    },
+    {
+      "example_id": "bird-train-movie_3-89022653",
+      "db_id": "movie_3",
+      "selection_order": 110
+    },
+    {
+      "example_id": "bird-train-olympics-78276798",
+      "db_id": "olympics",
+      "selection_order": 111
+    },
+    {
+      "example_id": "bird-train-public_review_platform-26936112",
+      "db_id": "public_review_platform",
+      "selection_order": 112
+    },
+    {
+      "example_id": "bird-train-address-61706486",
+      "db_id": "address",
+      "selection_order": 113
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-85140791",
+      "db_id": "book_publishing_company",
+      "selection_order": 114
+    },
+    {
+      "example_id": "bird-train-books-72729577",
+      "db_id": "books",
+      "selection_order": 115
+    },
+    {
+      "example_id": "bird-train-car_retails-19499621",
+      "db_id": "car_retails",
+      "selection_order": 116
+    },
+    {
+      "example_id": "bird-train-hockey-50090648",
+      "db_id": "hockey",
+      "selection_order": 117
+    },
+    {
+      "example_id": "bird-train-movie_3-9456999",
+      "db_id": "movie_3",
+      "selection_order": 118
+    },
+    {
+      "example_id": "bird-train-olympics-42760019",
+      "db_id": "olympics",
+      "selection_order": 119
+    },
+    {
+      "example_id": "bird-train-public_review_platform-18464206",
+      "db_id": "public_review_platform",
+      "selection_order": 120
+    },
+    {
+      "example_id": "bird-train-address-9649831",
+      "db_id": "address",
+      "selection_order": 121
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-37937961",
+      "db_id": "book_publishing_company",
+      "selection_order": 122
+    },
+    {
+      "example_id": "bird-train-books-16882676",
+      "db_id": "books",
+      "selection_order": 123
+    },
+    {
+      "example_id": "bird-train-car_retails-62112297",
+      "db_id": "car_retails",
+      "selection_order": 124
+    },
+    {
+      "example_id": "bird-train-hockey-36393354",
+      "db_id": "hockey",
+      "selection_order": 125
+    },
+    {
+      "example_id": "bird-train-movie_3-44154818",
+      "db_id": "movie_3",
+      "selection_order": 126
+    },
+    {
+      "example_id": "bird-train-olympics-19712680",
+      "db_id": "olympics",
+      "selection_order": 127
+    },
+    {
+      "example_id": "bird-train-public_review_platform-27548444",
+      "db_id": "public_review_platform",
+      "selection_order": 128
+    },
+    {
+      "example_id": "bird-train-address-49680610",
+      "db_id": "address",
+      "selection_order": 129
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-26330301",
+      "db_id": "book_publishing_company",
+      "selection_order": 130
+    },
+    {
+      "example_id": "bird-train-books-58894768",
+      "db_id": "books",
+      "selection_order": 131
+    },
+    {
+      "example_id": "bird-train-car_retails-49629238",
+      "db_id": "car_retails",
+      "selection_order": 132
+    },
+    {
+      "example_id": "bird-train-hockey-27456905",
+      "db_id": "hockey",
+      "selection_order": 133
+    },
+    {
+      "example_id": "bird-train-movie_3-64021788",
+      "db_id": "movie_3",
+      "selection_order": 134
+    },
+    {
+      "example_id": "bird-train-olympics-13856199",
+      "db_id": "olympics",
+      "selection_order": 135
+    },
+    {
+      "example_id": "bird-train-public_review_platform-71748784",
+      "db_id": "public_review_platform",
+      "selection_order": 136
+    },
+    {
+      "example_id": "bird-train-address-14133233",
+      "db_id": "address",
+      "selection_order": 137
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-6672460",
+      "db_id": "book_publishing_company",
+      "selection_order": 138
+    },
+    {
+      "example_id": "bird-train-books-83098134",
+      "db_id": "books",
+      "selection_order": 139
+    },
+    {
+      "example_id": "bird-train-car_retails-98013267",
+      "db_id": "car_retails",
+      "selection_order": 140
+    },
+    {
+      "example_id": "bird-train-hockey-23941594",
+      "db_id": "hockey",
+      "selection_order": 141
+    },
+    {
+      "example_id": "bird-train-movie_3-41906924",
+      "db_id": "movie_3",
+      "selection_order": 142
+    },
+    {
+      "example_id": "bird-train-olympics-60080998",
+      "db_id": "olympics",
+      "selection_order": 143
+    },
+    {
+      "example_id": "bird-train-public_review_platform-35333806",
+      "db_id": "public_review_platform",
+      "selection_order": 144
+    },
+    {
+      "example_id": "bird-train-address-93797752",
+      "db_id": "address",
+      "selection_order": 145
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-37363752",
+      "db_id": "book_publishing_company",
+      "selection_order": 146
+    },
+    {
+      "example_id": "bird-train-books-10880834",
+      "db_id": "books",
+      "selection_order": 147
+    },
+    {
+      "example_id": "bird-train-car_retails-11868015",
+      "db_id": "car_retails",
+      "selection_order": 148
+    },
+    {
+      "example_id": "bird-train-hockey-88727100",
+      "db_id": "hockey",
+      "selection_order": 149
+    },
+    {
+      "example_id": "bird-train-movie_3-47911354",
+      "db_id": "movie_3",
+      "selection_order": 150
+    },
+    {
+      "example_id": "bird-train-olympics-60898921",
+      "db_id": "olympics",
+      "selection_order": 151
+    },
+    {
+      "example_id": "bird-train-public_review_platform-37108838",
+      "db_id": "public_review_platform",
+      "selection_order": 152
+    },
+    {
+      "example_id": "bird-train-address-71510609",
+      "db_id": "address",
+      "selection_order": 153
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-60374626",
+      "db_id": "book_publishing_company",
+      "selection_order": 154
+    },
+    {
+      "example_id": "bird-train-books-55359144",
+      "db_id": "books",
+      "selection_order": 155
+    },
+    {
+      "example_id": "bird-train-car_retails-84122504",
+      "db_id": "car_retails",
+      "selection_order": 156
+    },
+    {
+      "example_id": "bird-train-hockey-62505724",
+      "db_id": "hockey",
+      "selection_order": 157
+    },
+    {
+      "example_id": "bird-train-movie_3-9096795",
+      "db_id": "movie_3",
+      "selection_order": 158
+    },
+    {
+      "example_id": "bird-train-olympics-51021381",
+      "db_id": "olympics",
+      "selection_order": 159
+    },
+    {
+      "example_id": "bird-train-public_review_platform-85925755",
+      "db_id": "public_review_platform",
+      "selection_order": 160
+    },
+    {
+      "example_id": "bird-train-address-51993157",
+      "db_id": "address",
+      "selection_order": 161
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-3441345",
+      "db_id": "book_publishing_company",
+      "selection_order": 162
+    },
+    {
+      "example_id": "bird-train-books-26637976",
+      "db_id": "books",
+      "selection_order": 163
+    },
+    {
+      "example_id": "bird-train-car_retails-61372104",
+      "db_id": "car_retails",
+      "selection_order": 164
+    },
+    {
+      "example_id": "bird-train-hockey-65237596",
+      "db_id": "hockey",
+      "selection_order": 165
+    },
+    {
+      "example_id": "bird-train-movie_3-17675137",
+      "db_id": "movie_3",
+      "selection_order": 166
+    },
+    {
+      "example_id": "bird-train-olympics-20223624",
+      "db_id": "olympics",
+      "selection_order": 167
+    },
+    {
+      "example_id": "bird-train-public_review_platform-57825601",
+      "db_id": "public_review_platform",
+      "selection_order": 168
+    },
+    {
+      "example_id": "bird-train-address-58953618",
+      "db_id": "address",
+      "selection_order": 169
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-3421880",
+      "db_id": "book_publishing_company",
+      "selection_order": 170
+    },
+    {
+      "example_id": "bird-train-books-30589215",
+      "db_id": "books",
+      "selection_order": 171
+    },
+    {
+      "example_id": "bird-train-car_retails-44591831",
+      "db_id": "car_retails",
+      "selection_order": 172
+    },
+    {
+      "example_id": "bird-train-hockey-75116886",
+      "db_id": "hockey",
+      "selection_order": 173
+    },
+    {
+      "example_id": "bird-train-movie_3-16542381",
+      "db_id": "movie_3",
+      "selection_order": 174
+    },
+    {
+      "example_id": "bird-train-olympics-67587973",
+      "db_id": "olympics",
+      "selection_order": 175
+    },
+    {
+      "example_id": "bird-train-public_review_platform-29820914",
+      "db_id": "public_review_platform",
+      "selection_order": 176
+    },
+    {
+      "example_id": "bird-train-address-74643664",
+      "db_id": "address",
+      "selection_order": 177
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-22155676",
+      "db_id": "book_publishing_company",
+      "selection_order": 178
+    },
+    {
+      "example_id": "bird-train-books-74538534",
+      "db_id": "books",
+      "selection_order": 179
+    },
+    {
+      "example_id": "bird-train-car_retails-52998290",
+      "db_id": "car_retails",
+      "selection_order": 180
+    },
+    {
+      "example_id": "bird-train-hockey-10764483",
+      "db_id": "hockey",
+      "selection_order": 181
+    },
+    {
+      "example_id": "bird-train-movie_3-50948802",
+      "db_id": "movie_3",
+      "selection_order": 182
+    },
+    {
+      "example_id": "bird-train-olympics-4796964",
+      "db_id": "olympics",
+      "selection_order": 183
+    },
+    {
+      "example_id": "bird-train-public_review_platform-17302933",
+      "db_id": "public_review_platform",
+      "selection_order": 184
+    },
+    {
+      "example_id": "bird-train-address-17867924",
+      "db_id": "address",
+      "selection_order": 185
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-81342089",
+      "db_id": "book_publishing_company",
+      "selection_order": 186
+    },
+    {
+      "example_id": "bird-train-books-7680208",
+      "db_id": "books",
+      "selection_order": 187
+    },
+    {
+      "example_id": "bird-train-car_retails-5975809",
+      "db_id": "car_retails",
+      "selection_order": 188
+    },
+    {
+      "example_id": "bird-train-hockey-23477887",
+      "db_id": "hockey",
+      "selection_order": 189
+    },
+    {
+      "example_id": "bird-train-movie_3-79402753",
+      "db_id": "movie_3",
+      "selection_order": 190
+    },
+    {
+      "example_id": "bird-train-olympics-25400069",
+      "db_id": "olympics",
+      "selection_order": 191
+    },
+    {
+      "example_id": "bird-train-public_review_platform-98030309",
+      "db_id": "public_review_platform",
+      "selection_order": 192
+    },
+    {
+      "example_id": "bird-train-address-99758007",
+      "db_id": "address",
+      "selection_order": 193
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-92938002",
+      "db_id": "book_publishing_company",
+      "selection_order": 194
+    },
+    {
+      "example_id": "bird-train-books-73649236",
+      "db_id": "books",
+      "selection_order": 195
+    },
+    {
+      "example_id": "bird-train-car_retails-9424385",
+      "db_id": "car_retails",
+      "selection_order": 196
+    },
+    {
+      "example_id": "bird-train-hockey-82019460",
+      "db_id": "hockey",
+      "selection_order": 197
+    },
+    {
+      "example_id": "bird-train-movie_3-96422673",
+      "db_id": "movie_3",
+      "selection_order": 198
+    },
+    {
+      "example_id": "bird-train-olympics-69489737",
+      "db_id": "olympics",
+      "selection_order": 199
+    },
+    {
+      "example_id": "bird-train-public_review_platform-22986378",
+      "db_id": "public_review_platform",
+      "selection_order": 200
+    },
+    {
+      "example_id": "bird-train-address-50849688",
+      "db_id": "address",
+      "selection_order": 201
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-57037928",
+      "db_id": "book_publishing_company",
+      "selection_order": 202
+    },
+    {
+      "example_id": "bird-train-books-35908517",
+      "db_id": "books",
+      "selection_order": 203
+    },
+    {
+      "example_id": "bird-train-car_retails-9689647",
+      "db_id": "car_retails",
+      "selection_order": 204
+    },
+    {
+      "example_id": "bird-train-hockey-42928130",
+      "db_id": "hockey",
+      "selection_order": 205
+    },
+    {
+      "example_id": "bird-train-movie_3-96182869",
+      "db_id": "movie_3",
+      "selection_order": 206
+    },
+    {
+      "example_id": "bird-train-olympics-8055984",
+      "db_id": "olympics",
+      "selection_order": 207
+    },
+    {
+      "example_id": "bird-train-public_review_platform-59931979",
+      "db_id": "public_review_platform",
+      "selection_order": 208
+    },
+    {
+      "example_id": "bird-train-address-54053179",
+      "db_id": "address",
+      "selection_order": 209
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-16566985",
+      "db_id": "book_publishing_company",
+      "selection_order": 210
+    },
+    {
+      "example_id": "bird-train-books-28278787",
+      "db_id": "books",
+      "selection_order": 211
+    },
+    {
+      "example_id": "bird-train-car_retails-14001641",
+      "db_id": "car_retails",
+      "selection_order": 212
+    },
+    {
+      "example_id": "bird-train-hockey-35877673",
+      "db_id": "hockey",
+      "selection_order": 213
+    },
+    {
+      "example_id": "bird-train-movie_3-9861565",
+      "db_id": "movie_3",
+      "selection_order": 214
+    },
+    {
+      "example_id": "bird-train-olympics-16664073",
+      "db_id": "olympics",
+      "selection_order": 215
+    },
+    {
+      "example_id": "bird-train-public_review_platform-42976412",
+      "db_id": "public_review_platform",
+      "selection_order": 216
+    },
+    {
+      "example_id": "bird-train-address-47793471",
+      "db_id": "address",
+      "selection_order": 217
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-29932027",
+      "db_id": "book_publishing_company",
+      "selection_order": 218
+    },
+    {
+      "example_id": "bird-train-books-3398340",
+      "db_id": "books",
+      "selection_order": 219
+    },
+    {
+      "example_id": "bird-train-car_retails-80199006",
+      "db_id": "car_retails",
+      "selection_order": 220
+    },
+    {
+      "example_id": "bird-train-hockey-94628",
+      "db_id": "hockey",
+      "selection_order": 221
+    },
+    {
+      "example_id": "bird-train-movie_3-90873985",
+      "db_id": "movie_3",
+      "selection_order": 222
+    },
+    {
+      "example_id": "bird-train-olympics-27246557",
+      "db_id": "olympics",
+      "selection_order": 223
+    },
+    {
+      "example_id": "bird-train-public_review_platform-51985104",
+      "db_id": "public_review_platform",
+      "selection_order": 224
+    },
+    {
+      "example_id": "bird-train-address-81032514",
+      "db_id": "address",
+      "selection_order": 225
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-78044176",
+      "db_id": "book_publishing_company",
+      "selection_order": 226
+    },
+    {
+      "example_id": "bird-train-books-86101349",
+      "db_id": "books",
+      "selection_order": 227
+    },
+    {
+      "example_id": "bird-train-car_retails-83079039",
+      "db_id": "car_retails",
+      "selection_order": 228
+    },
+    {
+      "example_id": "bird-train-hockey-53600424",
+      "db_id": "hockey",
+      "selection_order": 229
+    },
+    {
+      "example_id": "bird-train-movie_3-63622693",
+      "db_id": "movie_3",
+      "selection_order": 230
+    },
+    {
+      "example_id": "bird-train-olympics-75531630",
+      "db_id": "olympics",
+      "selection_order": 231
+    },
+    {
+      "example_id": "bird-train-public_review_platform-52319300",
+      "db_id": "public_review_platform",
+      "selection_order": 232
+    },
+    {
+      "example_id": "bird-train-address-41340500",
+      "db_id": "address",
+      "selection_order": 233
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-30675742",
+      "db_id": "book_publishing_company",
+      "selection_order": 234
+    },
+    {
+      "example_id": "bird-train-books-77217714",
+      "db_id": "books",
+      "selection_order": 235
+    },
+    {
+      "example_id": "bird-train-car_retails-42767672",
+      "db_id": "car_retails",
+      "selection_order": 236
+    },
+    {
+      "example_id": "bird-train-hockey-42512562",
+      "db_id": "hockey",
+      "selection_order": 237
+    },
+    {
+      "example_id": "bird-train-movie_3-56367899",
+      "db_id": "movie_3",
+      "selection_order": 238
+    },
+    {
+      "example_id": "bird-train-olympics-85172031",
+      "db_id": "olympics",
+      "selection_order": 239
+    },
+    {
+      "example_id": "bird-train-public_review_platform-59679902",
+      "db_id": "public_review_platform",
+      "selection_order": 240
+    },
+    {
+      "example_id": "bird-train-address-91122484",
+      "db_id": "address",
+      "selection_order": 241
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-95223851",
+      "db_id": "book_publishing_company",
+      "selection_order": 242
+    },
+    {
+      "example_id": "bird-train-books-85412734",
+      "db_id": "books",
+      "selection_order": 243
+    },
+    {
+      "example_id": "bird-train-car_retails-93832804",
+      "db_id": "car_retails",
+      "selection_order": 244
+    },
+    {
+      "example_id": "bird-train-hockey-34355926",
+      "db_id": "hockey",
+      "selection_order": 245
+    },
+    {
+      "example_id": "bird-train-movie_3-27626845",
+      "db_id": "movie_3",
+      "selection_order": 246
+    },
+    {
+      "example_id": "bird-train-olympics-45459686",
+      "db_id": "olympics",
+      "selection_order": 247
+    },
+    {
+      "example_id": "bird-train-public_review_platform-13678818",
+      "db_id": "public_review_platform",
+      "selection_order": 248
+    },
+    {
+      "example_id": "bird-train-address-11042954",
+      "db_id": "address",
+      "selection_order": 249
+    },
+    {
+      "example_id": "bird-train-book_publishing_company-47642420",
+      "db_id": "book_publishing_company",
+      "selection_order": 250
+    },
+    {
+      "example_id": "bird-train-books-61824350",
+      "db_id": "books",
+      "selection_order": 251
+    },
+    {
+      "example_id": "bird-train-car_retails-98180741",
+      "db_id": "car_retails",
+      "selection_order": 252
+    },
+    {
+      "example_id": "bird-train-hockey-63762136",
+      "db_id": "hockey",
+      "selection_order": 253
+    },
+    {
+      "example_id": "bird-train-movie_3-4435846",
+      "db_id": "movie_3",
+      "selection_order": 254
+    },
+    {
+      "example_id": "bird-train-olympics-26430595",
+      "db_id": "olympics",
+      "selection_order": 255
+    },
+    {
+      "example_id": "bird-train-public_review_platform-10603936",
+      "db_id": "public_review_platform",
+      "selection_order": 256
+    }
+  ],
+  "train_core_source_hash": "464934fa102ddc5447546e7301327c816000a439670acbb70e5d77a0869a6b3b",
+  "created_at": "2026-08-17T14:21:38.912280+00:00"
+}

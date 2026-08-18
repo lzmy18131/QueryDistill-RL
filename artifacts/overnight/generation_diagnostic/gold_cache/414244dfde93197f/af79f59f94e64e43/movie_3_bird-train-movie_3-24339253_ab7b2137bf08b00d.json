@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "rows": [
+    [
+      "BLANKET BEVERLY"
+    ],
+    [
+      "FREAKY POCUS"
+    ],
+    [
+      "GRADUATE LORD"
+    ],
+    [
+      "LOVE SUICIDES"
+    ],
+    [
+      "IDOLS SNATCHERS"
+    ],
+    [
+      "MYSTIC TRUMAN"
+    ],
+    [
+      "SWARM GOLD"
+    ],
+    [
+      "LAWLESS VISION"
+    ]
+  ],
+  "columns": [
+    "title"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 57.44,
+  "timed_out": false,
+  "row_count": 8,
+  "truncated": false
+}

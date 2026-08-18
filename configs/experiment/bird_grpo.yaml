@@ -1,0 +1,29 @@
+# BIRD GRPO pilot config.
+base_model_path: models/qwen3-0.6b-base
+init_adapter_path: checkpoints/bird/distilled_sft
+init_merged_model_path: null
+examples_path: data/bird/examples/train.jsonl
+registry_path: data/bird/db_registry.json
+output_dir: checkpoints/bird/grpo
+max_samples: 20
+num_generations: 2
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+max_steps: 2
+learning_rate: 1.0e-5
+max_prompt_length: 1024
+max_completion_length: 128
+temperature: 1.0
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+bf16: true
+quantize_4bit: true
+use_gradient_checkpointing: false
+use_vllm: false
+report_to: none
+logging_steps: 1
+save_steps: 1
+seed: 3407
+require_plan: false

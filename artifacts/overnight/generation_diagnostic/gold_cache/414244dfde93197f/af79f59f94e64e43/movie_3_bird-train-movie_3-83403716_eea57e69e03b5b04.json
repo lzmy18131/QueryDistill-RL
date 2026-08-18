@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      0
+    ]
+  ],
+  "columns": [
+    "COUNT(T1.actor_id)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 46.94,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

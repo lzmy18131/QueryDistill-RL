@@ -1,0 +1,14 @@
+# REAL BIRD GPTQ INT4 pilot from GRPO output.
+# Calibration is train-only; Mini-Dev is never used for calibration.
+base_model_path: models/qwen3-0.6b-base
+adapter_path: checkpoints/pilot/grpo/adapter
+merged_output_dir: checkpoints/pilot/merged
+output_dir: checkpoints/pilot/gptq
+calibration_examples_path: data/bird/examples/train.jsonl
+max_calibration_samples: 16
+calibration_max_length: 1024
+bits: 4
+group_size: 128
+desc_act: false
+sym: true
+batch_size: 1

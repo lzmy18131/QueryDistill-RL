@@ -1,0 +1,41 @@
+# Signal Recovery Distilled-SFT (paired subset, train_core only).
+# Use the merged diagnostic+collection verified candidate set (88 IDs),
+# NOT candidates.jsonl (64 IDs). This keeps Distilled-SFT aligned with
+# paired_manifest.json and Gold-SFT.
+stage: sft
+model_name_or_path: models/qwen3-0.6b-base
+template: qwen
+dataset_alias: querydistill_signal_distilled
+dataset_dir: artifacts/signal_recovery/distilled_sft/dataset
+source_examples_path: data/bird/splits/train_core.jsonl
+distillation_path: artifacts/signal_recovery/teacher_collection/all_candidates.jsonl
+target_mode: distilled
+train_splits: [train]
+paired_manifest_path: artifacts/signal_recovery/paired/paired_manifest.json
+strict_distilled: false
+output_dir: checkpoints/signal_recovery/distilled_sft
+logging_dir: runs/signal_recovery/distilled_sft
+finetuning_type: lora
+quantization_bit: 4
+double_quantization: true
+quantization_type: nf4
+compute_dtype: bf16
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+lora_target: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+max_steps: null
+logging_steps: 1
+save_steps: 20
+bf16: true
+fp16: false
+gradient_checkpointing: true
+report_to: none
+max_seq_length: 1024
+packing: false
+overwrite_output_dir: true
+resume_from_checkpoint: false

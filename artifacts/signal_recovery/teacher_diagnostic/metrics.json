@@ -1,0 +1,28 @@
+{
+  "requested_examples": 60,
+  "attempt1_generated": 60,
+  "retry_generated": 41,
+  "attempt1_parse_valid_rate": 1.0,
+  "attempt1_safe_rate": 0.9833,
+  "attempt1_execution_success_rate": 0.8,
+  "attempt1_verified_example_count": 19,
+  "attempt1_verified_example_coverage": 0.3167,
+  "retry_count": 41,
+  "retry_parse_valid_rate": 1.0,
+  "retry_execution_success_rate": 0.6585,
+  "retry_incremental_verified_examples": 5,
+  "retry_incremental_coverage": 0.0833,
+  "duplicate_retry_count": 7,
+  "duplicate_retry_rate": 0.1707,
+  "unique_candidate_sql_ratio": 0.9109,
+  "final_verified_example_count": 24,
+  "final_verified_example_coverage": 0.4,
+  "failure_buckets": {
+    "wrong_result": 51,
+    "sqlite_execution_error": 25,
+    "verified": 24,
+    "unsafe_or_multiple_statement": 1
+  },
+  "elapsed_time_seconds": 1785.25,
+  "peak_vram_mib": 7079
+}

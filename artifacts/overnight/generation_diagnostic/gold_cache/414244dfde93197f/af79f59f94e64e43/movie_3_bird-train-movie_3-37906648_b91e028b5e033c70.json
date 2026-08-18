@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      1000
+    ]
+  ],
+  "columns": [
+    "COUNT(film_id)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 45.86,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

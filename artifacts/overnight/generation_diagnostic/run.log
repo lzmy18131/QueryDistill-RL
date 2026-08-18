@@ -1,0 +1,75 @@
+Failed to load /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+Failed to load /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+W0818 04:06:48.167000 425 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W0818 04:06:51.829000 425 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   0%|          | 1/310 [00:02<10:35,  2.06s/it]Loading weights:   3%|▎         | 9/310 [00:02<00:53,  5.60it/s]Loading weights:   5%|▍         | 15/310 [00:02<00:29, 10.02it/s]Loading weights:   7%|▋         | 21/310 [00:02<00:18, 15.30it/s]Loading weights:   9%|▊         | 27/310 [00:02<00:13, 20.22it/s]Loading weights:  12%|█▏        | 36/310 [00:02<00:09, 29.81it/s]Loading weights:  14%|█▎        | 42/310 [00:02<00:08, 29.87it/s]Loading weights:  16%|█▌        | 49/310 [00:02<00:07, 35.17it/s]Loading weights:  19%|█▊        | 58/310 [00:03<00:05, 43.92it/s]Loading weights:  21%|██        | 64/310 [00:03<00:05, 44.27it/s]Loading weights:  23%|██▎       | 70/310 [00:03<00:05, 46.35it/s]Loading weights:  25%|██▍       | 76/310 [00:03<00:04, 49.43it/s]Loading weights:  26%|██▋       | 82/310 [00:03<00:04, 48.68it/s]Loading weights:  29%|██▉       | 91/310 [00:03<00:03, 56.45it/s]Loading weights:  31%|███▏      | 97/310 [00:03<00:04, 51.01it/s]Loading weights:  33%|███▎      | 103/310 [00:03<00:04, 51.39it/s]Loading weights:  35%|███▌      | 110/310 [00:04<00:03, 53.27it/s]Loading weights:  37%|███▋      | 116/310 [00:04<00:03, 51.31it/s]Loading weights:  40%|████      | 124/310 [00:04<00:03, 51.69it/s]Loading weights:  43%|████▎     | 132/310 [00:04<00:03, 56.16it/s]Loading weights:  45%|████▍     | 138/310 [00:04<00:03, 53.53it/s]Loading weights:  46%|████▋     | 144/310 [00:04<00:03, 52.66it/s]Loading weights:  49%|████▊     | 151/310 [00:04<00:02, 55.55it/s]Loading weights:  51%|█████     | 158/310 [00:04<00:02, 54.00it/s]Loading weights:  53%|█████▎    | 165/310 [00:05<00:02, 57.12it/s]Loading weights:  55%|█████▌    | 171/310 [00:05<00:02, 52.14it/s]Loading weights:  58%|█████▊    | 179/310 [00:05<00:02, 56.51it/s]Loading weights:  60%|█████▉    | 185/310 [00:05<00:02, 46.47it/s]Loading weights:  62%|██████▏   | 192/310 [00:05<00:02, 47.95it/s]Loading weights:  64%|██████▍   | 198/310 [00:05<00:02, 50.15it/s]Loading weights:  66%|██████▌   | 204/310 [00:05<00:02, 48.91it/s]Loading weights:  68%|██████▊   | 211/310 [00:06<00:01, 51.81it/s]Loading weights:  70%|███████   | 217/310 [00:06<00:01, 50.96it/s]Loading weights:  72%|███████▏  | 223/310 [00:06<00:01, 51.70it/s]Loading weights:  74%|███████▍  | 229/310 [00:06<00:01, 48.55it/s]Loading weights:  76%|███████▌  | 235/310 [00:06<00:01, 38.03it/s]Loading weights:  77%|███████▋  | 240/310 [00:06<00:02, 29.44it/s]Loading weights:  79%|███████▉  | 246/310 [00:07<00:01, 33.96it/s]Loading weights:  82%|████████▏ | 253/310 [00:07<00:01, 40.60it/s]Loading weights:  83%|████████▎ | 258/310 [00:07<00:01, 39.12it/s]Loading weights:  86%|████████▌ | 267/310 [00:07<00:00, 49.70it/s]Loading weights:  88%|████████▊ | 273/310 [00:07<00:00, 51.69it/s]Loading weights:  90%|█████████ | 279/310 [00:07<00:00, 49.99it/s]Loading weights:  92%|█████████▏| 285/310 [00:07<00:00, 50.33it/s]Loading weights:  94%|█████████▍| 291/310 [00:07<00:00, 47.40it/s]Loading weights:  96%|█████████▌| 298/310 [00:07<00:00, 52.54it/s]Loading weights:  98%|█████████▊| 304/310 [00:08<00:00, 52.83it/s]Loading weights: 100%|██████████| 310/310 [00:08<00:00, 37.97it/s]
+
+WARN  Python GIL is enabled: Multi-gpu quant acceleration for MoE models is sub-optimal and multi-core accelerated cpu packing is also disabled. We recommend Python >= 3.13.3t with Pytorch > 2.8 for mult-gpu quantization and multi-cpu packing with env `PYTHON_GIL=0`.
+INFO  ENV: Auto setting PYTORCH_ALLOC_CONF='expandable_segments:True,max_split_size_mb:256,garbage_collection_threshold:0.7' for memory saving.
+INFO  ENV: Auto setting CUDA_DEVICE_ORDER=PCI_BUS_ID for correctness.           
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+INFO  
+
+┌─────────────┐    ┌────────────────────────┐    ┌────────────┐    ┌─────────┐
+│ GPT-QModel  │ -> │ ▓▓▓▓▓▓▓▓▓▓▓▓ 16bit     │ -> │ ▒▒▒▒ 8bit  │ -> │ ░░ 4bit │
+└─────────────┘    └────────────────────────┘    └────────────┘    └─────────┘
+GPT-QModel   : 7.3.2
+Transformers : 5.15.0
+Torch        : 2.13.0+cu126
+Triton       : 3.7.1
+{
+  "groups": 24,
+  "completions": 96,
+  "raw_completion_unique_ratio": 0.9688,
+  "normalized_sql_unique_ratio": 0.9167,
+  "format_valid_rate": 0.9167,
+  "parse_valid_rate": 0.9167,
+  "safe_rate": 0.9062,
+  "execution_success_rate": 0.3854,
+  "strict_correct_rate": 0.2083,
+  "nonzero_reward_std_group_count": 18,
+  "nonzero_reward_std_group_fraction": 0.75,
+  "group_reward_stds": [
+    0.0,
+    0.0,
+    0.433013,
+    0.064952,
+    0.043301,
+    0.476314,
+    0.55,
+    0.0,
+    0.043301,
+    0.5,
+    0.55,
+    0.589889,
+    0.526189,
+    0.476314,
+    0.089268,
+    0.05,
+    0.463681,
+    0.064952,
+    0.541266,
+    0.0,
+    0.0,
+    0.0,
+    0.089268,
+    0.174553
+  ],
+  "mean_completion_tokens": 83.96,
+  "stop_at_sql_close_rate": 0.2083,
+  "truncation_rate": 0.7917,
+  "multiple_sql_block_rate": 0.0104,
+  "format_invalid_but_sql_extractable_rate": 0.25,
+  "reward_histogram": {
+    "-0.20": 1,
+    "-0.30": 1,
+    "-1.00": 3,
+    "0.10": 49,
+    "0.20": 16,
+    "1.20": 20,
+    "None": 6
+  },
+  "created_at": "2026-08-17T20:12:39.825390+00:00"
+}

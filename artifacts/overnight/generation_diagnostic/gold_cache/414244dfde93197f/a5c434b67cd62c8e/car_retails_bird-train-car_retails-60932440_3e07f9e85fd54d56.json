@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "rows": [
+    [
+      141
+    ],
+    [
+      141
+    ],
+    [
+      124
+    ]
+  ],
+  "columns": [
+    "customerNumber"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 125.81,
+  "timed_out": false,
+  "row_count": 3,
+  "truncated": false
+}

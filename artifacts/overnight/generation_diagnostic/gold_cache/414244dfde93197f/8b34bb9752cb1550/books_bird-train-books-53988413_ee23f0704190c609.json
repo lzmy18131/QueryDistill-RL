@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      14
+    ]
+  ],
+  "columns": [
+    "COUNT(*)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 58.67,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

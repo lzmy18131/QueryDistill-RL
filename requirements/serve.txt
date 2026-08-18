@@ -1,0 +1,8 @@
+# Serving dependencies - separate environment (.venv-serve), never the
+# training env. Resolved version is recorded only if the vLLM smoke actually
+# installs and runs; otherwise docs/FIRST_BUILD_REPORT.md records
+# VLLM_NOT_SMOKE_VERIFIED with the exact blocker.
+#
+# Verified attempt target: vllm==0.27.1 on Python 3.14 + torch==2.13.0+cu126.
+vllm>=0.12
+openai>=1.0

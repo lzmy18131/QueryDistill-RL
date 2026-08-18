@@ -1,0 +1,66 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Failed to load /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so: Could not load this library: /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_cutlass_90a.abi3.so
+Failed to load /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so: Could not load this library: /mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/torchao/_C_mxfp8.cpython-310-x86_64-linux-gnu.so
+W0818 05:10:37.982000 416 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W0818 05:10:39.829000 416 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+
+WARN  Python GIL is enabled: Multi-gpu quant acceleration for MoE models is sub-optimal and multi-core accelerated cpu packing is also disabled. We recommend Python >= 3.13.3t with Pytorch > 2.8 for mult-gpu quantization and multi-cpu packing with env `PYTHON_GIL=0`.
+INFO  ENV: Auto setting PYTORCH_ALLOC_CONF='expandable_segments:True,max_split_size_mb:256,garbage_collection_threshold:0.7' for memory saving.
+INFO  ENV: Auto setting CUDA_DEVICE_ORDER=PCI_BUS_ID for correctness.           
+fatal: not a git repository (or any parent up to mount point /mnt)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+INFO  
+
+┌─────────────┐    ┌────────────────────────┐    ┌────────────┐    ┌─────────┐
+│ GPT-QModel  │ -> │ ▓▓▓▓▓▓▓▓▓▓▓▓ 16bit     │ -> │ ▒▒▒▒ 8bit  │ -> │ ░░ 4bit │
+└─────────────┘    └────────────────────────┘    └────────────┘    └─────────┘
+GPT-QModel   : 7.3.2
+Transformers : 5.15.0
+Torch        : 2.13.0+cu126
+Triton       : 3.7.1
+INFO  Kernel: Auto-selection: adding candidate `MarlinLinear`                   
+INFO  Kernel: selected -> `MarlinLinear`.                                       
+[transformers] `loss_type=None` was set in the config but it is unrecognized. Using the default loss: `ForCausalLMLoss`.
+Loading weights:   0%|          | 0/898 [00:00<?, ?it/s]Loading weights:   0%|          | 1/898 [00:01<23:00,  1.54s/it]Loading weights:   7%|▋         | 65/898 [00:01<00:15, 54.52it/s]Loading weights:  14%|█▎        | 123/898 [00:01<00:07, 110.53it/s]Loading weights:  22%|██▏       | 196/898 [00:01<00:03, 192.00it/s]Loading weights:  30%|██▉       | 268/898 [00:01<00:02, 274.26it/s]Loading weights:  37%|███▋      | 329/898 [00:02<00:01, 327.21it/s]Loading weights:  45%|████▍     | 402/898 [00:02<00:01, 408.53it/s]Loading weights:  53%|█████▎    | 479/898 [00:02<00:00, 487.78it/s]Loading weights:  61%|██████    | 548/898 [00:02<00:00, 525.42it/s]Loading weights:  68%|██████▊   | 614/898 [00:02<00:00, 548.33it/s]Loading weights:  76%|███████▋  | 685/898 [00:02<00:00, 590.56it/s]Loading weights:  84%|████████▍ | 758/898 [00:02<00:00, 627.44it/s]Loading weights:  93%|█████████▎| 836/898 [00:02<00:00, 665.21it/s]Loading weights: 100%|██████████| 898/898 [00:02<00:00, 312.52it/s]
+INFO  Marlin fp16: compiling torch.ops JIT extension in `/root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd`.
+[0 of 100] ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░| 0:00:00 / 0:00:00 [0/100] 0.0%Compiling extension: Marlin fp16... elapsed 0.0s / estimated ~117s | 0:00:00 / 0Compiling extension: Marlin fp16... elapsed 1.1s / estimated ~117s | 0:00:01 / 0INFO  Marlin fp16: torch.ops JIT compilation failed in 1.6s (estimated ~117s, -115s); using fallback path.
+Compiling extension: Marlin fp16... elapsed 1.1s / estimated ~117s | 0:00:01 / 0Compiling extension: Marlin fp16... elapsed 1.6s / estimated ~117s | 0:00:01 / 0                                                                                Traceback (most recent call last):
+  File "/mnt/d/LLMProjects/QueryDistill-RL/tools/run_validation_diagnostic.py", line 163, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/d/LLMProjects/QueryDistill-RL/tools/run_validation_diagnostic.py", line 60, in main
+    model, tokenizer = load_model(spec, **load_kwargs)
+                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/LLMProjects/QueryDistill-RL/src/querydistill/evaluation/modelspec.py", line 103, in load_model
+    model = AutoModelForCausalLM.from_pretrained(model_path, **load_kwargs)
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/transformers/modeling_utils.py", line 4372, in from_pretrained
+    hf_quantizer.postprocess_model(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        model
+        ^^^^^
+    )  # usually a no-op but sometimes needed, e.g to remove the quant config when dequantizing
+    ^
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/transformers/quantizers/base.py", line 194, in postprocess_model
+    return self._process_model_after_weight_loading(model, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/transformers/quantizers/quantizer_gptq.py", line 98, in _process_model_after_weight_loading
+    model = self.optimum_quantizer.post_init_model(model)
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/optimum/gptq/quantizer.py", line 624, in post_init_model
+    model = gptq_post_init(model, use_act_order=self.desc_act)
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/gptqmodel/utils/model.py", line 1245, in hf_gptqmodel_post_init
+    return gptqmodel_post_init(model, use_act_order, quantize_config, max_input_length)
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/gptqmodel/utils/model.py", line 1288, in gptqmodel_post_init
+    submodule.post_init()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/mnt/d/LLMProjects/QueryDistill-RL/.venv-wsl/lib/python3.14/site-packages/gptqmodel/nn_modules/qlinear/marlin.py", line 250, in post_init
+    raise ModuleNotFoundError(
+    ...<2 lines>...
+    )
+ModuleNotFoundError: Marlin torch.ops kernels are not properly installed. Error: Marlin fp16: failed to build torch.ops JIT extension: Ninja is required to load C++ extensions (pip install ninja to get it) | build_root=/root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd | base_build_root=/root/.cache/gptqmodel/torch_extensions/marlin_fp16 | python=3.14.4 | pid=416 | TORCH_EXTENSIONS_DIR= | GPTQMODEL_TORCH_EXTENSIONS_DIR= | candidate_binaries=/root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.so:missing, /root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.pyd:missing, /root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.dylib:missing, /root/.cache/gptqmodel/torch_extensions/marlin_fp16/1e5f7ee14f1bdfdd/gptqmodel_marlin_fp16_ops.dll:missing | build_root_entries=[]

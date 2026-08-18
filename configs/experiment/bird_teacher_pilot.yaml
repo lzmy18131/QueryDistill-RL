@@ -1,0 +1,14 @@
+# REAL Qwen3-4B Teacher pilot config.
+# SQL-only protocol, enable_thinking=False is applied by the backend via
+# tokenizer.apply_chat_template(..., enable_thinking=False).
+model_id: Qwen/Qwen3-4B
+revision: main
+device_map: auto
+load_in_4bit: true
+quant_type: nf4
+compute_dtype: bfloat16
+max_new_tokens: 256
+temperature: 0.7
+top_p: 0.95
+do_sample: true
+prompt_version: bird-v1

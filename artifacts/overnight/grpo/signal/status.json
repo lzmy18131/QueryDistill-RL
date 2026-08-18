@@ -1,0 +1,49 @@
+{
+  "run_id": "grpo-signal",
+  "status": "GRPO_INTEGRATION_PASS",
+  "learning_signal": "GRPO_LEARNING_SIGNAL_PASS",
+  "trained": true,
+  "steps": 8,
+  "real_sqlite_reward": true,
+  "reward_samples_logged": 16,
+  "reward_std_values": [
+    0.0,
+    0.3535533845424652,
+    0.0,
+    0.3181980550289154,
+    0.0,
+    0.3535533845424652,
+    0.0,
+    0.0
+  ],
+  "grad_norm_values": [
+    0.0,
+    1.3515625,
+    0.0,
+    1.59375,
+    0.0,
+    1.9609375,
+    0.0,
+    0.0
+  ],
+  "initialization_source": "sft_adapter",
+  "adapter_path": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/distilled_sft",
+  "adapter_sha256": "fb860e915b441f836e8b8ea986ff240dc344c2e6c9f88ef1a137043c02280a9b",
+  "adapter_dir": "/mnt/d/LLMProjects/QueryDistill-RL/checkpoints/signal_recovery/grpo_signal/adapter",
+  "split_report": {
+    "policy": "train_only",
+    "source_path": "",
+    "total": 88,
+    "included": 88,
+    "excluded_by_split": {},
+    "unknown_example_ids": []
+  },
+  "trainable_parameter_fingerprint_after": "a9d36cd5435a23a7a0639c91a3294425abd96dd9b322d5cf8b888ef490a472a7",
+  "trainable_parameter_fingerprint_changed": true,
+  "trainable_param_sha256_before": "c361d5c5f4b1dfd47e0f39d7dee586252af1b7a221685dea09c9c7e83e6da4b6",
+  "trainable_param_sha256_after": "ecda8986e18cc1d285ff71685e8fb0ea7c8aa7cd56aada1ac881282eb6976e39",
+  "trainable_param_sha256_changed": true,
+  "parameter_delta_l2": 0.04681784,
+  "max_abs_parameter_delta": 0.00012207,
+  "changed_parameter_tensor_count": 392
+}

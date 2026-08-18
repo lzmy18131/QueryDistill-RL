@@ -1,0 +1,12 @@
+{
+  "records": 64,
+  "format_valid_rate": 0.0625,
+  "sql_parse_valid_rate": 0.0625,
+  "safe_rate": 0.0625,
+  "execution_success_rate": 0.0156,
+  "strict_equivalent_rate": 0.0,
+  "mode_counts": {
+    "deterministic": 32,
+    "sampled": 32
+  }
+}

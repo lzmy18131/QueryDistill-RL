@@ -1,0 +1,8 @@
+{
+  "trainable_param_sha256_before": "c361d5c5f4b1dfd47e0f39d7dee586252af1b7a221685dea09c9c7e83e6da4b6",
+  "trainable_param_sha256_after": "ecda8986e18cc1d285ff71685e8fb0ea7c8aa7cd56aada1ac881282eb6976e39",
+  "changed": true,
+  "parameter_delta_l2": 0.04681784,
+  "max_abs_parameter_delta": 0.00012207,
+  "changed_parameter_tensor_count": 392
+}

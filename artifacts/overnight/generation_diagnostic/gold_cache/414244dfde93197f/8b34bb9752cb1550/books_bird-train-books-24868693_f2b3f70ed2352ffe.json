@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      1.0733203233900195
+    ]
+  ],
+  "columns": [
+    "CAST(SUM(CASE WHEN T1.status_value = 'Returned' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 102.82,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

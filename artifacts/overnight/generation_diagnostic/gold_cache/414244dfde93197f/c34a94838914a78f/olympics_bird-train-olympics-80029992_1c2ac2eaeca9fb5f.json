@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      7.115009746588694
+    ]
+  ],
+  "columns": [
+    "CAST(COUNT(CASE WHEN T4.medal_name = 'Bronze' THEN 1 ELSE NULL END) AS REAL) * 100 / COUNT(T2.person_id)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 251.72,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

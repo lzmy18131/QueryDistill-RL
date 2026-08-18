@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "rows": [
+    [
+      78.87
+    ]
+  ],
+  "columns": [
+    "SUM(T1.price)"
+  ],
+  "error_type": "none",
+  "error_message": "",
+  "duration_ms": 61.44,
+  "timed_out": false,
+  "row_count": 1,
+  "truncated": false
+}

@@ -1,0 +1,19 @@
+{
+  "started_at": null,
+  "ended_at": null,
+  "status": "ok",
+  "diagnostic_verified_count": 24,
+  "collection_verified_count": 64,
+  "union_verified_count": 88,
+  "all_candidates_verified_count": 88,
+  "paired_count": 88,
+  "duplicates": {
+    "diagnostic_rows": 101,
+    "collection_rows": 191,
+    "all_candidates_rows": 292,
+    "all_candidates_verified_unique_ids": 88,
+    "duplicate_verified_candidate_rows": 22
+  },
+  "missing_ids": [],
+  "extra_ids": []
+}

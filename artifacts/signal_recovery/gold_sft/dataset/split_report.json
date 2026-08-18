@@ -1,0 +1,8 @@
+{
+  "policy": "train_only",
+  "source_path": "/mnt/d/LLMProjects/QueryDistill-RL/data/bird/splits/train_core.jsonl",
+  "total": 1142,
+  "included": 1142,
+  "excluded_by_split": {},
+  "unknown_example_ids": []
+}

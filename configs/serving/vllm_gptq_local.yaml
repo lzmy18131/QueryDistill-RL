@@ -1,0 +1,13 @@
+# vLLM benchmark server config for the GPTQ INT4 deployment arm (Round 2.1).
+# Formal chain: GPTQ output from GRPO is served here.
+model_path: checkpoints/gptq/distilled_grpo_int4
+host: 127.0.0.1
+port: 8000
+tensor_parallel_size: 1
+gpu_memory_utilization: 0.85
+max_model_len: 2048
+dtype: auto
+max_num_seqs: 8
+enforce_eager: false
+trust_remote_code: true
+api_key: querydistill-smoke

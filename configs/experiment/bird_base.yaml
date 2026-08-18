@@ -1,0 +1,9 @@
+# BIRD Base evaluation model spec.
+stage: base
+base_model_path: models/qwen3-0.6b-base
+adapter_path: null
+merged_model_path: null
+quantized_model_path: null
+quantization: null
+artifact_manifest: {}
+hash: null

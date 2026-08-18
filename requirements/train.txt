@@ -1,0 +1,28 @@
+# Training dependency combinations actually verified in this round.
+#
+# 1) Native Windows CPU dev/test env (.venv, Python 3.11.15):
+#    exactly the pins below with the CPU torch wheel.
+#
+# 2) WSL2 CUDA env (.venv-wsl, Python 3.14.4):
+#    torch==2.13.0+cu126 (driver 566.24 = CUDA 12.7; cu130 is too new)
+#    + cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,
+#      nvjitlink,nvrtc,nvtx]==12.6.3 + cuda-bindings<13,>=12.9.4 + triton==3.7.1
+#    + nvidia-cudnn-cu12==9.10.2.21 + nvidia-cusparselt-cu12==0.7.1
+#    + nvidia-nccl-cu12==2.29.3 + nvidia-nvshmem-cu12==3.4.5,
+#    then the same library pins below.
+#
+# 3) LLaMA-Factory SFT env (.venv-sft, Python 3.14.4): LLaMA-Factory 0.9.5
+#    pins transformers<=5.6/accelerate<=1.11/peft<=0.18.1/trl<=0.24, which
+#    conflicts with TRL 1.10, so SFT has its own env:
+#    transformers==5.6.0 accelerate==1.11.0 peft==0.18.1 trl==0.24.0
+#    datasets==5.0.1 (4.0.0's dill shim is broken on Python 3.14),
+#    llamafactory==0.9.5 bitsandbytes==0.50.1.
+#
+torch==2.13.0+cpu        # Windows CPU env; WSL envs use torch==2.13.0+cu126
+transformers==5.15.0     # SFT env uses 5.6.0 (LLaMA-Factory pin)
+trl==1.10.0              # SFT env uses 0.24.0 (LLaMA-Factory pin)
+peft==0.20.0             # SFT env uses 0.18.1 (LLaMA-Factory pin)
+accelerate==1.14.0       # SFT env uses 1.11.0 (LLaMA-Factory pin)
+bitsandbytes==0.50.1
+sentencepiece==0.2.2
+numpy==2.4.3
