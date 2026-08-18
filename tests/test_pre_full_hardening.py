@@ -13,6 +13,7 @@ from querydistill.training.grpo_backend import (
     _reward_signal_stats,
     build_grpo_generation_kwargs,
     build_sql_stopping_criteria,
+    evaluate_grpo_gates,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -119,3 +120,74 @@ def test_composite_reward_returns_finite_for_junk(tiny_environment):
     assert trace is not None
     assert trace.breakdown.total == trace.breakdown.total  # finite (not NaN)
     assert trace.breakdown.total != float("inf")
+
+
+def _passing_evidence(**overrides):
+    evidence = {
+        "generation_group_count": 12,
+        "nonzero_reward_std_group_count": 7,
+        "nonzero_grad_step_count": 7,
+        "trainable_param_sha256_changed": True,
+        "parameter_delta_l2": 0.05,
+        "changed_parameter_tensor_count": 392,
+        "parse_valid_completion_count": 10,
+        "execution_success_count": 5,
+        "semantic_variance_group_count": 5,
+        "all_rewards_finite": True,
+    }
+    evidence.update(overrides)
+    return evidence
+
+
+def test_strong_gate_inherits_strict_gate():
+    gates = evaluate_grpo_gates(_passing_evidence())
+    assert gates["strict_grpo_signal_gate_pass"] is True
+    assert gates["strong_confirmation_gate_pass"] is True
+
+
+def test_strong_gate_false_when_rewards_not_finite():
+    gates = evaluate_grpo_gates(_passing_evidence(all_rewards_finite=False))
+    assert gates["strict_grpo_signal_gate_pass"] is False
+    assert gates["strong_confirmation_gate_pass"] is False
+
+
+def test_strong_gate_false_when_parameter_delta_zero():
+    gates = evaluate_grpo_gates(_passing_evidence(parameter_delta_l2=0.0))
+    assert gates["strict_grpo_signal_gate_pass"] is False
+    assert gates["strong_confirmation_gate_pass"] is False
+
+
+def test_strong_gate_false_when_sha_unchanged():
+    gates = evaluate_grpo_gates(_passing_evidence(trainable_param_sha256_changed=False))
+    assert gates["strict_grpo_signal_gate_pass"] is False
+    assert gates["strong_confirmation_gate_pass"] is False
+
+
+def test_grpo_trace_schema_has_protocol_fields(tmp_path):
+    from querydistill.training.callbacks import RewardSampleLogger
+
+    class FakeReward:
+        traces = []
+
+        def __call__(self, completions, prompts=None, **kwargs):
+            return [0.1] * len(completions)
+
+    path = tmp_path / "reward_samples.jsonl"
+    logger = RewardSampleLogger(
+        FakeReward(),
+        path,
+        registry={},
+        debug_full_trace=True,
+        run_id="test",
+        step_provider=lambda: 3,
+    )
+    logger(["<sql>SELECT 1</sql>"], prompts=["p"])
+    rows = [
+        json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()
+    ]
+    assert len(rows) == 1
+    r = rows[0]
+    assert r["optimizer_step"] == 3
+    assert r["completion_index"] == 0
+    assert r["stop_reason"] == "sql_close"
+    assert r["sql_block_count"] == 1

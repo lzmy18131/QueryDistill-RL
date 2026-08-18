@@ -21,14 +21,14 @@ set is not yet complete locally. All training/calibration paths are train-only
 by construction; dev/test are excluded by `SplitPolicy` and leakage rules in
 `src/querydistill/data/leakage.py`.
 
-## Deployment plans (not fully executed in Round 2)
+## Deployment plans (not fully executed)
 
 * BF16/FP16 merged LoRA checkpoint
 * GPTQ INT4 checkpoint via GPTQModel (calibration restricted to
   train/calibration splits)
 * vLLM OpenAI-compatible serving with kernel compatibility recorded, not
-  assumed; Round 2 records `VLLM_NOT_SMOKE_VERIFIED` when the serve environment
-  is not ready.
+  assumed; the project records `VLLM_NOT_SMOKE_VERIFIED` when the serve
+  environment is not ready.
 
 ## Ethics / safety
 
@@ -42,4 +42,4 @@ contexts never contain gold SQL/results (`RealModelContext`).
 * 0.6B student accuracy is expected to be far below large models.
 * Empty-result correctness is deliberately conservative (partial credit only).
 * No deployment claim is made until evaluation and review are complete.
-* Round 2 focuses on correctness/chain integrity; it is not a benchmark run.
+* The project focuses on correctness/chain integrity and pilot evidence; it is not a benchmark run.

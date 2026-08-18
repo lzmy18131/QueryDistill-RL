@@ -1,0 +1,11 @@
+{
+  "dataset_name": "birdsql/bird23-train-filtered",
+  "dataset_source": "HuggingFace birdsql/bird23-train-filtered + official BIRD train.zip",
+  "dataset_revision_if_known": "birdsql/bird23-train-filtered main (HF)",
+  "download_method": "official BIRD train.zip from bird-bench.oss-cn-beijing.aliyuncs.com; filtered JSON from HF mirror",
+  "local_raw_path": "data\\bird\\raw\\bird23_train_filtered.jsonl",
+  "row_count": 6601,
+  "file_size_bytes": 2654294,
+  "sha256": "2ee64aa593e1adc59be7d5b9ce2395372a8ee27fdd94a3fb4d2fe09f3cd34bc8",
+  "created_at": "2026-08-18T05:56:42.302850+00:00"
+}

@@ -1,0 +1,753 @@
+{"example_id": "bird-train-movie_platform-66673228", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-ecded707", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-7adf0109", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-48cb1fae", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-4109febb", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-60f2ac19", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-5ea9565d", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-aaf824cb", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-731cac42", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-ad8a9dd4", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-dc474b02", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-32d9e93e", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-97548c23", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-c89778fe", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-7107eefc", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-721f8938", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-923f15de", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie-ebe1b952", "db_id": "movie", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(REPLACE(T2.NetWorth, ',', ''), '$', ''), replace:REPLACE(T2.NetWorth, ',', ''), replace:REPLACE(REPLACE(NetWorth, ',', ''), '$', ''), replace:REPLACE(NetWorth, ',', '')"}
+{"example_id": "bird-train-movie-636258e8", "db_id": "movie", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(REPLACE(T3.NetWorth, ',', ''), '$', ''), replace:REPLACE(T3.NetWorth, ',', '')"}
+{"example_id": "bird-train-movie-13daf782", "db_id": "movie", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(REPLACE(T3.NetWorth, ',', ''), '$', ''), replace:REPLACE(T3.NetWorth, ',', '')"}
+{"example_id": "bird-train-social_media-b9984c7d", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-0a86bde9", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-170f5695", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-36da115e", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-5f09987f", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-29486ff0", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-dc80bf3e", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-3dd8cb17", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-4260994b", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-2b63190c", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-71111f88", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-1be30bf8", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-d4677947", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movielens-02d05dd8", "db_id": "movielens", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movielens-d22f670a", "db_id": "movielens", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movielens-9544dd82", "db_id": "movielens", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movielens-5463da37", "db_id": "movielens", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-app_store-33c1748b", "db_id": "app_store", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(REPLACE(Installs, ',', ''), '+', ''), replace:REPLACE(Installs, ',', '')"}
+{"example_id": "bird-train-regional_sales-b3dc45af", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-regional_sales-e8dc9a0b", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-regional_sales-ffb1b3db", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(\"Unit Cost\", ',', ''), replace:REPLACE(\"Unit Cost\", ',', ''), replace:REPLACE(\"Unit Cost\", ',', ''), replace:REPLACE(\"Unit Cost\", ',', ''), replace:REPLACE(\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-donor-79eb63b3", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-e9f03859", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-1f5eb34e", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-74add8a2", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-3a985bd5", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-89f1e946", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-1422339a", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-b3e838ce", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-888031bb", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-24eb6cb4", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-e719450e", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-fc9d0491", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-e2a7fbc3", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-af4f3a31", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-fb16058e", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-3cd42305", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-483df216", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-4ef94865", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-90c5985f", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-public_review_platform-2ba9a2d0", "db_id": "public_review_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-public_review_platform-f48f582d", "db_id": "public_review_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-public_review_platform-e5963613", "db_id": "public_review_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-disney-c2c7626a", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(T1.total_gross, 2), ',', '')"}
+{"example_id": "bird-train-disney-46afccd2", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(total_gross, 2), ',', '')"}
+{"example_id": "bird-train-disney-84e767b4", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T1.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-85d35b4b", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T2.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-fc3809f5", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T2.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-33e14cb8", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T2.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-e497812d", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T1.inflation_adjusted_gross, '$'), ',', ''), replace:REPLACE(TRIM(T1.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-e5697c59", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T1.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-31825779", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T3.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-72f38202", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T1.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-5250007b", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T1.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-0fad175b", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(inflation_adjusted_gross, '$'), ',', ''), replace:REPLACE(TRIM(total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-disney-b94f2d63", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(T1.total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-sales-03e0b238", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-15b91073", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-dfba05f8", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-b3a13f1d", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-ff63ad58", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-752fc02b", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-795fc022", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-2e8a5701", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-bf163ff7", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-d838a1b4", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-7c30ee17", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-3adaebb1", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-59e0bdba", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-d28a29b8", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-5d8e2570", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-cbf33500", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-09bdda28", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-22b070e6", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-airline-7a77d0d5", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-375f4b08", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-6a2457bb", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-046cba70", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-939c1c36", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-55208a78", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-fd38ebd9", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-2ef1d077", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-d3bd7da5", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-d62445c7", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-50077f40", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-4ea32e88", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-e036a170", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-0e73926d", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-c79d7b6d", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-d4a12264", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-bdf54e9b", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-500a215d", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-8ef2c4df", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-99efc5f4", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-6d13f3a4", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-5c03d49e", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-2512d620", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-5b99d74b", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-24d07c59", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-d7267d17", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-4571c4df", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-b553d226", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-deccb7b4", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-78f34073", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-b6974f60", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-food_inspection_2-3aca20c9", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-28322302", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-9abae317", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-5e995da8", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-9ee62bfc", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-adacf927", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-6098ea50", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-8bae29c6", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-eab925ea", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-1e01132b", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-73d0bbb4", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-d3cbd18b", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-7295a09c", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-b1c871cb", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-2d529476", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-ff092b6a", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-291c4372", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-e9bc051f", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-ce843f7d", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-5846b9d8", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-de0ee54b", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-1cb9ce32", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-e2233088", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-3c8d1711", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-56647530", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection-b70b76ca", "db_id": "food_inspection", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-human_resources-b583bc71", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(salary, 4), ',', '')"}
+{"example_id": "bird-train-human_resources-69b838f4", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(T1.salary, 4), ',', ''), replace:REPLACE(SUBSTRING(T2.minsalary, 4), ',', '')"}
+{"example_id": "bird-train-human_resources-048b26f2", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(T1.salary, 4), ',', '')"}
+{"example_id": "bird-train-human_resources-1338476c", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(T1.salary, 4), ',', '')"}
+{"example_id": "bird-train-human_resources-ccbca148", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(salary, 4), ',', ''), replace:REPLACE(SUBSTRING(salary, 4), ',', '')"}
+{"example_id": "bird-train-human_resources-369df921", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(maxsalary, 4), ',', '')"}
+{"example_id": "bird-train-human_resources-bcad768f", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(T1.salary, 4), ',', ''), replace:REPLACE(SUBSTRING(T1.salary, 4), ',', ''), replace:REPLACE(SUBSTRING(T1.salary, 4), ',', '')"}
+{"example_id": "bird-train-movie_platform-014563b0", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-b200e6ba", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-837b8ac9", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-d03d5d75", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-social_media-f4adf3f3", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-2ecfc9ab", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-social_media-af6b7f4f", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-4e40cabf", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-b01722ab", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-964adc8f", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-8751405f", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-app_store-894cff9d", "db_id": "app_store", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-regional_sales-b359b7b3", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T2.\"Unit Price\", ',', ''), replace:REPLACE(T2.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-regional_sales-4bcd13cc", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-regional_sales-8e8de63f", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-regional_sales-fc9d7f23", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-regional_sales-688d40c1", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T2.\"Unit Price\", ',', ''), replace:REPLACE(T2.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-authors-ad21194a", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-4eda458a", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-71ff13d1", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-e36486af", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-b878148d", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-a6a9bb17", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-e5a94121", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-ea4fae90", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-ae1910ce", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-fdaeb2da", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-e9d81dac", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-college_completion-f7762877", "db_id": "college_completion", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-disney-22c08ec2", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(inflation_adjusted_gross, 2), ',', '')"}
+{"example_id": "bird-train-sales-b7c3f99e", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-3c9c2076", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-96edc53a", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-c3e4f11f", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-3fc4d67f", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-ec739ce5", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-f0901a18", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-c80a2c9e", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-83b3244d", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-0addf225", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-3e556abf", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-airline-ff211314", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-20651998", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-2a1d0350", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-de20fb5d", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-8ca41f2f", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-bbe80827", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-cd7179f1", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-e02093c0", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-05911a42", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-5949cd4c", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-d473030f", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-49224df0", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-2a5937b2", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-41dff85e", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-69fe0100", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-a9752f97", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-e32f705a", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-a0cb7880", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-ef3797fa", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-aafa5a3c", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-d5db987e", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-airline-6417e09e", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-8bebec52", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-d3478639", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-8b8b4ede", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-e1793679", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-61a5c5b1", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-118e321c", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-airline-29e38f2e", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Air Carriers"}
+{"example_id": "bird-train-food_inspection_2-817d01a5", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-cc46a40d", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-27cfca4a", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-d7b3c525", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-d53cd3c7", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-a24d4a71", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-216d5b0a", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-24fac1d7", "db_id": "coinmarketcap", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(tag_names, ',', '')"}
+{"example_id": "bird-train-retails-55e3d831", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-image_and_language-23dd03bf", "db_id": "image_and_language", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-9d948b75", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-human_resources-2f7ce726", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(salary, 4), ',', '')"}
+{"example_id": "bird-train-human_resources-2a863670", "db_id": "human_resources", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(SUBSTRING(T1.salary, 4), ',', '')"}
+{"example_id": "bird-train-bike_share_1-50c0b44e", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-3f5add51", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-bc137c0e", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-soccer_2016-23ee02ae", "db_id": "soccer_2016", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-89c4394a", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-0adafc5a", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-regional_sales-f46e09a9", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Price\", ',', '')"}
+{"example_id": "bird-train-donor-4661ca3e", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-d8342255", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-bc390763", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-53b70ad0", "db_id": "authors", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-authors-076fba60", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-f6203ed9", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-de70ae6f", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-public_review_platform-61c24839", "db_id": "public_review_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-disney-633139ea", "db_id": "disney", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(TRIM(total_gross, '$'), ',', '')"}
+{"example_id": "bird-train-sales-9c474d36", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-feb6b2b7", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-eb12dfa3", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-607e1a87", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-dba58849", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-e911f23e", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-86bf7df6", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-8c89a474", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-d6afa353", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-12ccadb7", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-a8144950", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-9af0ebf9", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-airline-c2079b63", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-88dceb01", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-d805c84b", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-91d06f57", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-food_inspection_2-205150f4", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-food_inspection_2-fa5ee924", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-image_and_language-d9fc1af8", "db_id": "image_and_language", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-image_and_language-c8484d6d", "db_id": "image_and_language", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-image_and_language-2a609aca", "db_id": "image_and_language", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-0b5fac4a", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-edbdee70", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "SQL execution exceeded max_execution_ms while fetching"}
+{"example_id": "bird-train-sales_in_weather-f4e639e8", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-f6f6442c", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-software_company-c2261c6c", "db_id": "software_company", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-software_company-0901d0ac", "db_id": "software_company", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-d11baf18", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-ce16bbc8", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-32518cd2", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-7995aec2", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-87d40afe", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-4baab00e", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-f2bf4f3e", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-755c9d55", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-62cc26a4", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-027dd71a", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-2aab6ad3", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-b56d85aa", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-b22a42c4", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-29566aa2", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-6b7c001b", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-movie_platform-39a46862", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-844c3424", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-24ce9acb", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-92f7f52d", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-b24a905b", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-593c8c74", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-08e34e87", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-35b06a60", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-40b007ff", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-d299b36c", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-b8a3b1c6", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-59c681f0", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-7a011305", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-ae13caff", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-488743b5", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-8f96a2e1", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-dacd1964", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-03299ed2", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-8f0459a9", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-454b8b3b", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-902be80e", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-5205a46f", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-6b053bda", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-4742a2a5", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-355c8475", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-08c91133", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-e0e56f8e", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-47455313", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-11b1ce57", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-0d82487e", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-0b8ccbc5", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-9406f21d", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-81fd56ed", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-114935a4", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-c359d2bf", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-91cbf432", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-0970bff7", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-5d969423", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-2eca3b07", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-movie_platform-5d157b5a", "db_id": "movie_platform", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-6b40d565", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-576452b0", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-89c69457", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-d919b735", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-04866d2c", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-27c9c25a", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-2c9df1a8", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-f1c1e844", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-d13ba322", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-c06b6cff", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-de3b10bb", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-8ebeadee", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-f9644a2e", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-42ea4b69", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-5d4b9105", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-3d442c3b", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-9ecca755", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-3ab69ae2", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-41e35765", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-8ed19bdf", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-7681060f", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-ddc88589", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-5e2c9fea", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-297cc8d6", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-41a0fed6", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-ff45e9d3", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-ade59015", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-a41114ec", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-d446c2d5", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-be30177f", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-40663d64", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-codebase_comments-807fc933", "db_id": "codebase_comments", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-social_media-0ffaf6d0", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-social_media-7df507ce", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-social_media-ea420dc6", "db_id": "social_media", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-76fc95d2", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-19bae92b", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-71250da8", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-16860c8b", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-a636554d", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-talkingdata-b86cd668", "db_id": "talkingdata", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-94b66810", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-29e035e2", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-72397615", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-303693a5", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-09cf5fee", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-2cf1295e", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-a0673c23", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-f06f337d", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-6dfc07df", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-de24c749", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-85386b3d", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-fc95f32f", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-9b78c168", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-2f19ba3f", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-3dbc20fc", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-3f06f056", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-4278351a", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-d8fbdaff", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-3f10438e", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-1d0f49b8", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-a6fc60e1", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-b055ef44", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-14c4a473", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-a71ac819", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-9c0677cf", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-90cd1344", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-a3f0bda5", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-01a64988", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-20e5f68b", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-1e5c8494", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-59677751", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-feac73d7", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-605d4d4a", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-eb4cd78f", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-87c98771", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-d9baaaf5", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-49875b66", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-43e5e0b8", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-936ded31", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-84133328", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-203dae8b", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-f334690b", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-15af00cb", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-6ba7866d", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-f81bbf98", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-world_development_indicators-071b3fa7", "db_id": "world_development_indicators", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-regional_sales-33a42d5c", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-regional_sales-57645785", "db_id": "regional_sales", "error_type": "unsafe_sql", "sanitized_error": "forbidden AST nodes: replace:REPLACE(T1.\"Unit Price\", ',', ''), replace:REPLACE(T1.\"Unit Cost\", ',', '')"}
+{"example_id": "bird-train-donor-fab1a3da", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-d3aa0977", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-3f1629f2", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-1bdc2250", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-d702710e", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-3bbd14f0", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-4d2d0c82", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-a5ef39df", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-c2406386", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-925510a0", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-ef7e6249", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-a2872bda", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-bc484564", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-7a7bd057", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-bb0e0d3d", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-b182abfc", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-c8c450de", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-8c97b61e", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-d7c2ebfa", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-8831b9f6", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-09ba7510", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-bda30df8", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-68a9da07", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-c20370b3", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-d85b452e", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-016e4094", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-ffba2789", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-64bdb67e", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-b17e3b5d", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-5d22a445", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-e29f2ac9", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-948f1d52", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-119fad4c", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-f2a5ffcb", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-c27871e0", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-5ff2e2af", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-6a741fe5", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-6028ce8e", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-6c7a4b46", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-ed739d63", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-b1265a05", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-e1ef0c43", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-8f644380", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-a5971d0d", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-b22f7b6a", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-1ad051c6", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-d9693ddc", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-b9d4dd5b", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-ac5ae9d8", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-86ec3a61", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-1922983b", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-3b188a5d", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-0b0eea33", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-aeb4ecb4", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-4aa6cac2", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-633d5046", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-8d6acf52", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-f5e97b29", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-49e5e72d", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-5461b021", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-81b5e2f8", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-9fed4c7e", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-36dc5f65", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-donor-2d542ebe", "db_id": "donor", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-fb07fb60", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-05060efb", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-8026b9a8", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-cae37d16", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-07cf9eaa", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-10f6e61e", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-a9169907", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-93ae04dd", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-58163afb", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-a2e56d17", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-34f0da06", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-8510c5ca", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-2137bbc9", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-b53100d6", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-0bee55ed", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-c9e8c600", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-f672c8ea", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-cd270cb5", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-d42a5a42", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-a16eb3a3", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-bb7e520f", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-cada48c3", "db_id": "authors", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-authors-6d11ab63", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-fe3460db", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-6d9860aa", "db_id": "authors", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-authors-756781d9", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-a792b7fc", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-4eb61206", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-51c36c6f", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-798495fe", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-4c39d8db", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-10baf42a", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-49bbaf8d", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-84b63d4f", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-55622fe1", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-8784c7db", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-80a0dea0", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-380b323d", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-043deb8d", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-90a8b994", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-18c73149", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-4918aa2a", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-492f790c", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-7b3cd96f", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-684d12a8", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-f31c89d2", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-c01f5cc8", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-5f421cf7", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-b843a017", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-56a7c731", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-ca48e95f", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-authors-2e9d8172", "db_id": "authors", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-86a60a78", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-f50be8ac", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-ad9cca13", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-e8dd9e26", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-c2a9793e", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-38d621d3", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-67b7351f", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-f3e2430c", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-e40bfc8f", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-03c8bcc2", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-5408c6e4", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-b577e5bd", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-5a2a845b", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-297a106c", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-59ec18af", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-4e323fa4", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-60c35568", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-b8e0b691", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-5ebcb0f5", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-02c9bf60", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-5e0a04e1", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-9f799588", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-de5d1d97", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-ad833b0a", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-78e6c4de", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales-ab59de09", "db_id": "sales", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-cb19b490", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-34c00659", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-d50b64a6", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-f61a33aa", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-7fb3f04f", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-f4a9502b", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-875c45b1", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-4d7c2166", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-a2ea63f3", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-19bd2833", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-13f80ccc", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-16ec1869", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-f6017381", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-34be2341", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-8e127fda", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-79f71a91", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-menu-ce52d6dd", "db_id": "menu", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-e97c2a44", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-f72beabb", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-79dd5e98", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-84352baf", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-d98e99e4", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-971f326e", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-97c343ef", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-10b8a952", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-3cd85408", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-988bb3af", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-611a1669", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-ed966318", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-c1041f2a", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-9d71caa8", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-a5c26739", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-9786a363", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-880536ef", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-06811084", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-965a4f28", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-bb17c5c4", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-d8dbfe62", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-a2524d65", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-fd15b0ae", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-cee98854", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-461e2460", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-c19a98aa", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-language_corpus-3cde03d1", "db_id": "language_corpus", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-airline-d174e155", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airlines"}
+{"example_id": "bird-train-airline-0de96323", "db_id": "airline", "error_type": "sqlite_error", "sanitized_error": "no such table: Airports"}
+{"example_id": "bird-train-food_inspection_2-bf345be0", "db_id": "food_inspection_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-3ad018e0", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-78189d3e", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-613a235f", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-0ef83ec9", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-4b0248c2", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-eb983db2", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-a34945c6", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-bef13998", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-b4553579", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-1e6efd35", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-11fd6aea", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-d7421f90", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-3d168d8d", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-95656503", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-28394c5d", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-9b45acd1", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-903cffa5", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-52e1cb93", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-c6fe7315", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-de057504", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-4d2e1e6b", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-c22a8792", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-cfe0f8d9", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-9e532afe", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-20f62098", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-d27f09e0", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-bdfecec0", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-2796fd8d", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-1384cd5d", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-f62fa2fc", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-45cff147", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-coinmarketcap-0a33fd6f", "db_id": "coinmarketcap", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-5d8def64", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-5c99527d", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-6d907c93", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-a7907fee", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-d41d9c32", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-becd26df", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-09a1cc3d", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-469e81cc", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-e036855e", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-e66dcbc9", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-14d54976", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-2a29357a", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-b9d6f94c", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-55f1816e", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-d52580ec", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-6d27953b", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-0e164a81", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-d323a891", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-e0fcb93d", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-317dd963", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-5c10056a", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-8603b847", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-0f8a409a", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-c38f7fba", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-a3a5b662", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-1707471c", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-c06f838e", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-6d9e9578", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-883f87bd", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-cb9b6369", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-02bf7f79", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-f7db702c", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-617992dc", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-c2259030", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-f1b80e71", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-b0eff1a7", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-2ed87999", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-303fca2c", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-6120c5b9", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-3165315a", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-a5f079d7", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-a86fe3f2", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-retails-a6e5b935", "db_id": "retails", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-image_and_language-e8616356", "db_id": "image_and_language", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-598bd39c", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "worker process terminated after max_execution_ms hard deadline"}
+{"example_id": "bird-train-music_platform_2-513e2474", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-8e08ed33", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-ff49443b", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-222fc5f1", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-e2b79c38", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-e23009ad", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-1177a8b1", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-1051a0f6", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-23f02c5c", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-ead05e79", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-0aeea32a", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-c4b08bfd", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-afa9272d", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-ce1d6f14", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-b756cd16", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-61956c5b", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-2c23c7c5", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-695b9e8d", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-9e340e33", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-e5f0a2ae", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-fe4bb642", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-music_platform_2-a37b2a6b", "db_id": "music_platform_2", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-sales_in_weather-cea60832", "db_id": "sales_in_weather", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-chicago_crime-48d68036", "db_id": "chicago_crime", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-f1a5ce0d", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-6af80daf", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-adfcaf23", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-7677eddb", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-1f7751ee", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-f1cebb88", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-84019917", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-97638725", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-912915d0", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-f3bacf25", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-387e0ff1", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-011aa81a", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-5d29dc72", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-497b2e1a", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-191b477e", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-918cb1ae", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-8b819571", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-4eb4d064", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-6f699c23", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-fad26f04", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-66c9b03c", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-466745fe", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-f63fa34a", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-442886b5", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-15576b47", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-b7049a0b", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-860e0d2a", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-72cf42da", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-75dc1a2f", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-9d59c6bc", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-9eac0033", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-36da4935", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-4ec9777f", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-aabc1832", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}
+{"example_id": "bird-train-bike_share_1-602c6339", "db_id": "bike_share_1", "error_type": "timeout", "sanitized_error": "interrupted"}

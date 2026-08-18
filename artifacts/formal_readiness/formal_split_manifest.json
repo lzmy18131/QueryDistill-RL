@@ -1,0 +1,13 @@
+{
+  "full_filtered_train_count": 6601,
+  "engineering_validation_count": 120,
+  "formal_validation_count": 256,
+  "formal_train_count": 6225,
+  "sum_check": 6601,
+  "union_equals_6601": true,
+  "overlaps": {
+    "eng_vs_formal_val": 0,
+    "eng_vs_formal_train": 0,
+    "formal_val_vs_formal_train": 0
+  }
+}

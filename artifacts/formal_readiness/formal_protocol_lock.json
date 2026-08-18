@@ -1,0 +1,16 @@
+{
+  "student_base_model": "Qwen/Qwen3-0.6B-Base",
+  "teacher_model": "Qwen/Qwen3-4B",
+  "student_prompt_version": "bird-v1",
+  "teacher_prompt_version": "bird-v2",
+  "sql_protocol": "<sql>...</sql>",
+  "sql_stopping": "StopAfterSqlClose + SqlStoppingGRPOTrainer",
+  "safesql_executor_config": "SafeSQLExecutor spawn/fork + read-only + timeout",
+  "result_equivalence_verifier_config": "multiset default, ordered when ORDER BY semantic",
+  "composite_reward_config": "format/parse/safety/execution/correctness",
+  "db_registry_hash": [],
+  "formal_train_manifest_hash": "e83e66f2700c4c6dea8e940baccdc5d9960f5433135801d3572b32486832593f",
+  "formal_validation_manifest_hash": "4b55e73b951fd4bef0232257ad84a18d5c47e19b797aefaec266b1ae09929569",
+  "final_eval_manifest_hash": "6bce9a12ee1f05157ebeaedcd9628423fb3f54a8c262f2d70396e222c55208bf",
+  "created_at": "2026-08-18T05:58:56.690941+00:00"
+}

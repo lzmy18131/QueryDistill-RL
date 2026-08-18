@@ -257,6 +257,34 @@ def _reward_signal_stats(samples_path: Path) -> dict:
     }
 
 
+def evaluate_grpo_gates(evidence: dict) -> dict:
+    """Compute strict signal gate and strong confirmation gate from evidence."""
+    strict_gate = (
+        evidence.get("generation_group_count", 0) >= 8
+        and evidence.get("nonzero_reward_std_group_count", 0) >= 3
+        and evidence.get("nonzero_grad_step_count", 0) >= 2
+        and evidence.get("trainable_param_sha256_changed", False) is True
+        and evidence.get("parameter_delta_l2", 0.0) > 0.0
+        and evidence.get("changed_parameter_tensor_count", 0) > 0
+        and evidence.get("parse_valid_completion_count", 0) >= 1
+        and evidence.get("execution_success_count", 0) >= 1
+        and evidence.get("semantic_variance_group_count", 0) >= 1
+        and evidence.get("all_rewards_finite", False) is True
+    )
+    strong_confirmation_gate = (
+        strict_gate
+        and evidence.get("generation_group_count", 0) >= 10
+        and evidence.get("nonzero_reward_std_group_count", 0) >= 5
+        and evidence.get("nonzero_grad_step_count", 0) >= 3
+        and evidence.get("semantic_variance_group_count", 0) >= 2
+        and evidence.get("execution_success_count", 0) >= 2
+    )
+    return {
+        "strict_grpo_signal_gate_pass": strict_gate,
+        "strong_confirmation_gate_pass": strong_confirmation_gate,
+    }
+
+
 class SQLRewardFunction:
     """TRL-compatible reward callable with metadata-based identity mapping."""
 
@@ -773,29 +801,9 @@ class GRPOSmokeRunner:
         evidence.update(delta_evidence)
 
         # Strict Phase 1.7 gates (see EXPERIMENT_PHASE_1.7 spec).
-        strict_gate = (
-            evidence.get("generation_group_count", 0) >= 8
-            and evidence.get("nonzero_reward_std_group_count", 0) >= 3
-            and evidence.get("nonzero_grad_step_count", 0) >= 2
-            and evidence.get("trainable_param_sha256_changed", False) is True
-            and evidence.get("parameter_delta_l2", 0.0) > 0.0
-            and evidence.get("changed_parameter_tensor_count", 0) > 0
-            and evidence.get("parse_valid_completion_count", 0) >= 1
-            and evidence.get("execution_success_count", 0) >= 1
-            and evidence.get("semantic_variance_group_count", 0) >= 1
-            and evidence.get("all_rewards_finite", False) is True
-        )
-        strong_confirmation_gate = (
-            evidence.get("generation_group_count", 0) >= 10
-            and evidence.get("nonzero_reward_std_group_count", 0) >= 5
-            and evidence.get("nonzero_grad_step_count", 0) >= 3
-            and evidence.get("parameter_delta_l2", 0.0) > 0.0
-            and evidence.get("semantic_variance_group_count", 0) >= 2
-            and evidence.get("execution_success_count", 0) >= 2
-        )
-        evidence["strict_grpo_signal_gate_pass"] = strict_gate
-        evidence["strong_confirmation_gate_pass"] = strong_confirmation_gate
-        if strict_gate:
+        gates = evaluate_grpo_gates(evidence)
+        evidence.update(gates)
+        if gates["strict_grpo_signal_gate_pass"]:
             evidence["learning_signal"] = "GRPO_LEARNING_SIGNAL_PASS"
         else:
             evidence["learning_signal"] = "GRPO_LEARNING_SIGNAL_INSUFFICIENT"

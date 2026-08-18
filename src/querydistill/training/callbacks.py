@@ -27,12 +27,14 @@ class RewardSampleLogger:
         registry,
         debug_full_trace: bool = False,
         run_id: str | None = None,
+        step_provider=None,
     ):
         self._reward_fn = reward_fn
         self.path = Path(path)
         self.registry = registry
         self.debug_full_trace = debug_full_trace
         self.run_id = run_id
+        self._step_provider = step_provider
         self._lock = threading.Lock()
         self._count = 0
         self._generation_batch_counter = 0
@@ -64,10 +66,28 @@ class RewardSampleLogger:
             verification = trace_obj.verification if trace_obj else None
             candidate = trace_obj.candidate_execution if trace_obj else None
             gold = trace_obj.gold_execution if trace_obj else None
+            completion_text = completion if isinstance(completion, str) else str(completion)
+            stop_reason = None
+            sql_block_count = None
+            completion_tokens = None
+            if self.debug_full_trace:
+                stop_reason = (
+                    "sql_close"
+                    if completion_text.rstrip().endswith("</sql>")
+                    else "max_tokens_or_eos"
+                )
+                sql_block_count = completion_text.lower().count("<sql>")
             record = {
                 "timestamp": utc_now_iso(),
                 "run_id": self.run_id,
+                "optimizer_step": (
+                    int(self._step_provider()) if callable(self._step_provider) else None
+                ),
                 "generation_group_id": generation_group_id,
+                "completion_index": index,
+                "stop_reason": stop_reason,
+                "completion_tokens": completion_tokens,
+                "sql_block_count": sql_block_count,
                 "example_id": example_id or getattr(example, "example_id", None),
                 "db_id": getattr(example, "db_id", None),
                 "reward": float(rewards[index]) if index < len(rewards) else None,

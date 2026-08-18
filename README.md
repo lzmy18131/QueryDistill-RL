@@ -141,35 +141,32 @@ sanity. Full rationale: `docs/REWARD_DESIGN.md`.
   `D:\LLMCache`). See `.env.example`.
 * Primary CUDA environment: WSL2 Ubuntu. Native Windows is only used for CPU
   tests in this round.
-* First round bans: downloading the 4B teacher (except a possible 1-3 sample
-  smoke after the student pipeline fully passes), long SFT/GRPO runs, large
-  teacher generation, formal benchmarks, fake results.
+* This repository never claims production readiness, SOTA, or statistical
+  significance from pilot runs. Large formal runs are not started without
+  manual approval.
 
 ## Current verification status
 
-Round 2 smoke results (all real runs; evidence under
-`artifacts/smoke/*/status.json`, full detail in
-`docs/SECOND_REVIEW_FIX_REPORT.md`):
+Real pilot evidence (frozen from earlier phases; see reports):
 
-| Smoke | Status |
+| Item | Status |
 | --- | --- |
-| Student base inference (Qwen3-0.6B, GPU, single generation) | PASS |
-| LLaMA-Factory Gold-SFT QLoRA (2 steps, tiny fixture) | PASS |
-| LLaMA-Factory Distilled-SFT QLoRA (2 steps, verified mock targets) | PASS |
-| TRL GRPO initialized from Distilled-SFT (2 steps, real SQLite reward) | GRPO_INTEGRATION_PASS / learning signal insufficient (honest) |
-| GPTQModel INT4 consuming GRPO adapter | PASS |
-| vLLM serve | VLLM_NOT_SMOKE_VERIFIED (optional, not a blocker) |
+| Real Qwen3-4B Teacher | PASS |
+| 88-example paired Gold/Distilled SFT | PASS |
+| Corrected Distilled-SFT (88 rows, 66 steps) | PASS |
+| Canonical `</sql>` stopping | PASS |
+| Protocol-correct GRPO reconfirmation | PASS |
+| GPTQ INT4 quantization | PASS |
+| GPTQ load validation | ENV BLOCKED (CUDA_HOME/nvcc) |
+| Full BIRD formal data onboarding | IN PROGRESS (see `artifacts/formal_readiness`) |
+| Formal full experiment | NOT RUN |
+| vLLM | NOT SMOKE VERIFIED |
 
-CPU gates: `compileall` pass, `ruff check` pass, `ruff format --check` pass,
-`pytest -q` = **281 passed, 1 skipped** (GPU probe skipped in CPU env).
+Current CPU regression (final commit): `compileall` PASS, `ruff` PASS,
+`pytest` = **314 passed, 1 skipped** on fresh clone of the final commit.
 
-No benchmark numbers, no teacher 4B download, no BIRD download, no formal
-training in this round.
-
-> The existing GPU smoke status files under `artifacts/smoke/` are historical
-> evidence from earlier rounds. They do **not** claim Round 2.2
-> `generation_latency_ms`, `global_step`, or `resume` behavior; those new
-> behaviors are verified by CPU regression tests.
+No benchmark numbers are claimed. Pilot validation values are engineering
+observations only.
 
 ## Tests
 
@@ -201,7 +198,7 @@ vLLM config. GPU tests are marked `@pytest.mark.gpu`.
 
 * Tiny synthetic fixtures (`tests/fixtures/tiny_sql`) are engineering smoke
   data only; they are never presented as benchmark results.
-* Round 2 verifies API paths, data integrity, and smoke capability, not accuracy.
+* The project verifies API paths, data integrity, and pilot capability, not formal accuracy.
 * Empty-result equivalence is deliberately conservative; more sophisticated
   sanity checks are future work.
 * vLLM/GPTQ kernel behavior on Ada (RTX 4060) is recorded, not assumed.

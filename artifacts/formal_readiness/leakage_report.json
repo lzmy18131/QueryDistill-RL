@@ -1,0 +1,9 @@
+{
+  "formal_train_vs_engineering": 0,
+  "formal_train_vs_formal_validation": 0,
+  "formal_train_vs_mini_dev": 0,
+  "engineering_vs_formal_validation": 0,
+  "engineering_vs_mini_dev": 0,
+  "formal_validation_vs_mini_dev": 0,
+  "duplicate_normalized_question_count": 1
+}
