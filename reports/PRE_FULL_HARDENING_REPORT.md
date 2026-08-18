@@ -1,6 +1,6 @@
 # Pre-Full Hardening Report — Phase 1.7
 
-Status: IN PROGRESS.
+Status: FINAL — FULL_BIRD_DATABASE_INCOMPLETE (all GRPO/protocol core gates passed; GPTQ load blocked by missing CUDA toolkit; full BIRD DB set missing).
 
 ## 1. Repository repair
 
@@ -65,13 +65,19 @@ Observed pilot values only; no statistical significance claimed.
 
 ## 8. GPTQ load validation
 
-TBD.
+- Historical quantization: PASS (INT4, 528 MB)
+- Load smoke attempted with Ninja available and D-drive cache env
+- Blocker: `CUDA_HOME` / `nvcc` not installed in WSL; Marlin JIT cannot compile
+- Status: `GPTQ_LOAD_VALIDATION_BLOCKED_ENVIRONMENT`
+- Existing GPTQ checkpoint is preserved; no re-quantization was performed.
 
 ## 9. Full BIRD onboarding
 
 - 6601 filtered train rows confirmed.
 - formal_train_core = 6481 (6601 minus 120 validation_tuning).
 - DB registry missing 60 DBs -> FULL_BIRD_DATABASE_INCOMPLETE.
+- Gold structural audit: 6601/6601 parse success, 6601/6601 SELECT-only.
+- Gold execution smoke not run because required DBs are missing.
 
 ## 10. Leakage audit
 
@@ -91,8 +97,20 @@ TBD.
 
 ## 13. CPU regression
 
-TBD.
+- compileall: PASS
+- ruff format: PASS
+- ruff check: PASS
+- pytest: 313 passed, 2 skipped
 
 ## 14. Final status
 
-TBD.
+PROJECT STATUS: `FULL_BIRD_DATABASE_INCOMPLETE`
+
+Core pre-full hardening gates otherwise satisfied:
+- Repository repaired, data package tracked, fresh clone import/pytest PASS
+- No tracked pyc/pycache, secret scan clean
+- SQL-close stopping aligned in GRPO via `SqlStoppingGRPOTrainer`
+- Protocol-correct GRPO reconfirmation PASS (strong confirmation gate true)
+- Validation observation recorded
+- GPTQ load remains environment-blocked (missing CUDA toolkit/nvcc)
+- Full BIRD DB registry incomplete (60 missing DBs)

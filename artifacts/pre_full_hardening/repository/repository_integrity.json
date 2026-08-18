@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-08-18T05:19:09.538644+00:00",
+  "tracked_file_count": 335,
+  "tracked_python_count": 106,
+  "tracked_pyc_count": 0,
+  "tracked_pycache_count": 0,
+  "data_package_file_count": 10,
+  "fresh_clone_import_pass": true,
+  "fresh_clone_pytest_pass": true,
+  "fresh_clone_pytest_summary": "314 passed, 1 skipped",
+  "secret_scan_hits": 0,
+  "git_commit": "b89a4e23de7073852dc78153214196d682f23216",
+  "git_dirty": false
+}
